@@ -1,0 +1,449 @@
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('./montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'montserratregular';
+    src: url('./montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body {
+    font-family: 'montserratlight';
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    cursor:default;
+    /* overflow: hidden; */
+}
+
+ul, li {
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100vh;
+    min-width: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0px;
+    margin-top: 8px;
+    font-size: 1em;
+}
+
+
+.navbutton:hover, #leftarrowproject, #rightarrowproject, 
+#leftarrowclub, #rightarrowclub{
+    cursor: pointer;
+   }
+
+
+#navbarContainer {
+    width: auto; 
+    /* width: 7%; */
+    display: inline-flex;
+    /* justify-content: space-between; */
+}
+
+#navbarContainer div {
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    width: 29px;
+    line-height: 29px; 
+    font-size: 140%;
+    display: inline-flex;
+}
+
+#navbarContainer div span{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    background-size: 100% 200%;
+    transition: background-position 0.25s;
+    color: rgb(0, 0, 0);
+    transform: rotate(-180deg);
+}
+
+.selected {
+    background-color: rgb(255, 255, 255);
+}
+
+.aboutMe {
+    background: #4077ad;
+    color: #4077ad;
+}
+
+.aboutMeSpan {
+    background-image: linear-gradient(to top, #fff 50%, #4077ad 50%);
+}
+
+.hover {
+    background-position: 0 100%; 
+}
+
+.experiences {
+    background: #6ba7cf;
+    color: #6ba7cf
+}
+
+.experienceSpan {
+    background-image: linear-gradient(to top, #fff 50%, #6ba7cf 50%);
+}
+
+.projects {
+    background: #ed6772;
+    color: #ed6772;
+}
+
+.projectsSpan {
+    background-image: linear-gradient(to top, #fff 50%, #ed6772 50%);
+}
+
+.clubs {
+    background: #8ac8dc;
+    color: #8ac8dc
+}
+
+.clubsSpan {
+    background-image: linear-gradient(to top, #fff 50%, #8ac8dc 50%);
+}
+
+#aboutmephone {
+    display: none;
+}
+
+#nameContainer {
+    width: 30vw;
+    /* top: 35vh; */
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+#myName {
+    font-size: 3vw;
+    line-height: 45px;
+    font-family: 'montserratregular';
+}
+
+#tagsUnderName {
+    font-size: 90%;
+    line-height: 25px;
+}
+
+a { 
+    text-decoration: none;
+    outline: none;
+}
+
+#namewrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:fit-content;
+}
+
+#socialmediadiv {
+    position: absolute;
+    left: 0;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+}
+
+#socialmedia{
+    width:40px;
+    height:40px;
+    border:0; 
+    position: relative; 
+    display: inline-block; 
+    margin-left: 5px; 
+    margin-right: 5px;
+    outline: none;
+  }
+
+.slides2 { 
+    position: relative;
+}
+
+.slides2 > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+
+#pagesContainer {
+    padding: 0;
+    width: 60vw;
+    background: none;
+    height: 100vh;
+}
+
+.pages {
+    transition: 1s;
+    color: white;
+    padding: 0;
+    display: none;
+    overflow: auto;
+    height: 50vh;
+}
+
+.frontpic {
+    display: none;
+}
+
+#aboutmecontainer {
+    margin: 20px;
+}
+
+#aboutMeTop {
+    display: block;
+}
+
+#aboutMeBottom {
+    background: #4077ad;
+    white-space: normal;
+    display: block;
+    color: white;
+}
+
+
+#experienceTop {
+    background: #ed6772;
+    display: none;
+}
+
+#experienceBottom {
+    background: #6ba7cf;
+    display: none;
+}
+
+#projectscontainer, #clubscontainer, #experienceContainer {
+    padding: 20px;
+    height: fit-content;
+}
+
+#projectsTop {
+    background: #ed6772;
+    display: none;
+}
+
+#projectsBottom {
+    background: #ed6772;
+    display: none;
+}
+
+.project, .club {
+    height: fit-content;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.project {
+    background: #ed6772;
+}
+
+.club {
+    background: #8ac8dc;
+}
+
+
+.slides { 
+    position: relative;
+}
+
+.slides > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.slides > li >img { 
+    width: 100%; 
+}
+
+.arrows {
+    position: absolute;
+    width: fit-content;
+    bottom:0;
+    right:0;
+    text-align: center;
+    margin: 10px;   
+}
+
+.arrowresize {
+    /* width: 30%; */
+    height: auto;
+}
+
+.leftarrow {
+    display: inline-block
+}
+
+.rightarrow {
+    display: inline-block
+}
+
+
+
+#projectcount {
+    text-align: center;
+}
+
+
+#clubsTop {
+    background: #ed6772;
+    display: none;
+}
+
+
+#clubsBottom {
+    background: #8ac8dc;
+    display: none;
+    /* color: black; */
+}
+/* 
+
+@media screen and (max-width: 900px) {
+    body {
+      overflow: unset
+    }
+    #navbarContainer, .navbutton, #nameContainer {
+        display: none;
+        width: 0px;
+    }
+    
+    #pagesContainer{
+        width: 100vw;   
+    }
+
+    .pages {
+        height: auto;
+    }
+
+    .frontpic {
+        display: block;
+        width: 100vw;
+    }
+
+    .slides2 {
+        display: none;
+        height: 0;
+    }
+
+    #aboutMeTop, #aboutMeBottom {
+        display: block;
+    }
+
+    #projectsTop {
+        display: block;
+    }
+
+    #projectsBottom {
+        display: block;
+
+    }
+    #projectscontainer {
+        display: block;
+        width: 100vw;
+    }
+
+    .project {
+        width: 100vw;
+    }
+  }
+ */
+
+
+
+@media screen and (max-width: 900px) {
+    body {
+      overflow: unset
+    }
+
+    #navbarContainer, .navbutton, #pagesContainer{
+        display: none;
+        width: 0px;
+    }
+    
+    #nameContainer {
+        width: 100vw;
+        top: 3vh;
+        display: block;
+    }
+
+    #myName {
+        font-size: 2.5em;
+        display: block;
+    }
+    
+    #aboutmephone {
+        display: block;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #flex-container {
+        display: block;
+    }
+    
+    #namewrapper {
+        display: inline-block;
+        /* background: blue; */
+        position: relative;
+    }
+
+    #socialmediadiv {
+        display: inline-block;
+        /* background: yellow; */
+        position: relative;
+    }
+
+  }
+
+  /* pre loading gif */
+  .no-js #loader { display: none;  }
+  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+  .se-pre-con {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url(loading-gif.gif) center no-repeat #fff;
+      background-size: 15%;
+  }
