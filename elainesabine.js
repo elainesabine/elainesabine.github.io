@@ -73,7 +73,7 @@ $(".clubs").on("click", function () {
 
 
 var clickCountProjects = 0;
-var totalProjectsNum = 4;
+var totalProjectsNum = 6;
 //clicking on left arrow in projects page
 $("#leftarrowproject").on("click", function () {
     clickCountProjects --;
@@ -95,6 +95,12 @@ $("#leftarrowproject").on("click", function () {
     } else if (clickCountProjects % totalProjectsNum == 3) {
         $('.project').fadeOut(500)
         $('#project4').delay(500).fadeIn(500)
+    } else if (clickCountProjects % totalProjectsNum == 4) {
+        $('.project').fadeOut(500)
+        $('#project5').delay(500).fadeIn(500)
+    } else if (clickCountProjects % totalProjectsNum == 5) {
+        $('.project').fadeOut(500)
+        $('#project6').delay(500).fadeIn(500)
     };
 
     $("#projectnum").text(clickCountProjects % totalProjectsNum + 1); // update the pager
@@ -115,6 +121,12 @@ $("#rightarrowproject").on("click", function () {
     } else if (clickCountProjects % totalProjectsNum == 3) {
         $('.project').fadeOut(500)
         $('#project4').delay(500).fadeIn(500)
+    } else if (clickCountProjects % totalProjectsNum == 4) {
+        $('.project').fadeOut(500)
+        $('#project5').delay(500).fadeIn(500)
+    } else if (clickCountProjects % totalProjectsNum == 5) {
+        $('.project').fadeOut(500)
+        $('#project6').delay(500).fadeIn(500)
     };
     $("#projectnum").text(clickCountProjects % totalProjectsNum + 1);
 });
