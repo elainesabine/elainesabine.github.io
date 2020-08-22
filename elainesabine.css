@@ -15,6 +15,16 @@
     font-style: normal;
   }
 
+a {
+    color: white;
+    text-decoration: underline !important;
+}
+
+a :hover {
+    color: white;
+    text-decoration: underline !important;
+}
+
 
 body {
     font-family: 'montserratlight';
