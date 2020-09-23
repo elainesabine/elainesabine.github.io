@@ -66,10 +66,10 @@ p {
 }
 
 
-.navbutton:hover, #leftarrowproject, #rightarrowproject, 
+/* .navbutton:hover, #leftarrowproject, #rightarrowproject, 
 #leftarrowclub, #rightarrowclub{
     cursor: pointer;
-   }
+   } */
 
 
 #navbarContainer {
