@@ -157,7 +157,7 @@ $(document).ready(function() {
 
 //CLUBSSSS
 var clickCountClubs = 0;
-var totalClubsNum = 4;
+var totalClubsNum = 5;
 //clicking on left arrow in clubs page
 $("#leftarrowclub").on("click", function () {
     clickCountClubs --;
@@ -179,6 +179,9 @@ $("#leftarrowclub").on("click", function () {
     } else if (clickCountClubs % totalClubsNum == 3) {
         $('.club').fadeOut(500)
         $('#club4').delay(500).fadeIn(500)
+    } else if (clickCountClubs % totalClubsNum == 4) {
+        $('.club').fadeOut(500)
+        $('#club5').delay(500).fadeIn(500)
     };
 
     $("#clubnum").text(clickCountClubs % totalClubsNum + 1); // update the pager
@@ -200,6 +203,9 @@ $("#rightarrowclub").on("click", function () {
     } else if (clickCountClubs % totalClubsNum == 3) {
         $('.club').fadeOut(500)
         $('#club4').delay(500).fadeIn(500)
+    } else if (clickCountClubs % totalClubsNum == 4) {
+        $('.club').fadeOut(500)
+        $('#club5').delay(500).fadeIn(500)
     }
     $("#clubnum").text(clickCountClubs % totalClubsNum + 1);
 });
