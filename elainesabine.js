@@ -4,10 +4,10 @@
 //     // $(".se-pre-con").fadeOut("slow");;
 // });
 
-$(window).on('load',function () {
-    $(".se-pre-con").fadeOut('slow');
-});
 
+// $(window).on('load',function () {
+//     $(".se-pre-con").fadeOut('slow');
+// });
 
 
 // clicking on the navbar buttons
