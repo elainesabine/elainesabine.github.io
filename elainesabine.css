@@ -308,7 +308,7 @@ a {
 .arrows {
     position: absolute;
     width: fit-content;
-    bottom:0;
+    /* bottom:0; */
     right:0;
     text-align: center;
     margin: 10px;   
