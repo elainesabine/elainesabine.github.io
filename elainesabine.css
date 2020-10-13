@@ -312,6 +312,7 @@ a {
     right:0;
     text-align: center;
     margin: 10px;   
+    z-index: 3;
 }
 
 .arrowresize {
@@ -320,11 +321,13 @@ a {
 }
 
 .leftarrow {
-    display: inline-block
+    display: inline-block;
+    z-index: 3;
 }
 
 .rightarrow {
-    display: inline-block
+    display: inline-block;
+    z-index: 3;
 }
 
 
