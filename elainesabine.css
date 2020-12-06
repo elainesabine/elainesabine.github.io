@@ -156,14 +156,15 @@ p {
 }
 
 #myName {
-    font-size: 3vw;
-    line-height: 45px;
+    font-size: 40px;
+    /* line-height: 45px; */
     font-family: 'montserratregular';
+    margin-bottom: 10px;
 }
 
 #tagsUnderName {
-    font-size: 90%;
-    line-height: 25px;
+    font-size: 15px;
+    /* line-height: 25px; */
 }
 
 a { 
@@ -172,7 +173,7 @@ a {
 }
 
 #namewrapper {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -239,6 +240,7 @@ a {
 
 #aboutMeTop {
     display: block;
+    background: #4077ad;
 }
 
 #aboutMeBottom {
