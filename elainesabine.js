@@ -1,10 +1,3 @@
-// Wait for window load
-// $(window).load(function() {
-//     alert("Your book is overdue"); 
-//     // $(".se-pre-con").fadeOut("slow");;
-// });
-
-
 $(window).on('load',function () {
     $(".se-pre-con").fadeOut('slow');
 });
@@ -52,23 +45,30 @@ $(".aboutMe").on("click", function () {
 
 // clicking on experience
 $(".experiences").on("click", function () {
-    $(".pages").css("display", "none")
-    $("#experienceTop").css("display", "block")
-    $("#experienceBottom").css("display", "block")
+    $('#slideshowExperience li').imagesLoaded( { background: true }, function() {
+        $(".pages").css("display", "none")
+        $("#experienceTop").css("display", "block")
+        $("#experienceBottom").css("display", "block")
+      });
 });
 
 // clicking on projects
 $(".projects").on("click", function () {
-    $(".pages").css("display", "none")
-    $("#projectsTop").css("display", "block")
-    $("#projectsBottom").css("display", "block")
+    $('#slideshowProjects li').imagesLoaded( { background: true }, function() {
+        $(".pages").css("display", "none")
+        $("#projectsTop").css("display", "block")
+        $("#projectsBottom").css("display", "block")
+    });
+
 });
 
 // clicking on clubs
 $(".clubs").on("click", function () {
-    $(".pages").css("display", "none")
-    $("#clubsTop").css("display", "block")
-    $("#clubsBottom").css("display", "block")
+    $('#slideshowClubs li').imagesLoaded( { background: true }, function() {
+        $(".pages").css("display", "none")
+        $("#clubsTop").css("display", "block")
+        $("#clubsBottom").css("display", "block")
+    });
 });
 
 
