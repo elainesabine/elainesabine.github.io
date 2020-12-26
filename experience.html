@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="elainesabine.css">
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="logo5.png"/>
+    <title>ELAINE SABINE</title>
+</head>
+<body>
+    <div class="se-pre-con"></div>
+    <div id="flex-container">
+        <div class="flex-item" id="navbarContainer">
+            <div class="aboutMe navbutton"><span id="aboutMeID" class="aboutMeSpan">ABOUT ME</span></div>
+            <div class="experiences navbutton"><span id="experienceID" class="selected">EXPERIENCE</span></div>
+            <div class="projects navbutton"><span id="projectsID" class="projectsSpan">PROJECTS</span></div>
+            <div class="clubs navbutton"><span id="clubsID" class="clubsSpan">CLUBS</span></div>
+        </div>
+            
+        <div class="flex-item" id="nameContainer">
+            <div id="namewrapper">
+                    <img src="logo2.png" alt="Logo" style="width:80px;height:80px;border:0; display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
+                    <div id="myName">ELAINE SABINE PRANADJAYA</div>
+                    <div id="tagsUnderName">COMPUTER SCIENCE STUDENT <br> CAL POLY SLO, CALIFORNIA</div>
+            </div>
+            <div id='socialmediadiv'>
+                    <a href="mailto:elainesabine@gmail.com" target="_blank">
+                    <img id="socialmedia" src="email-icon.png" alt="Email" title="Email">
+                    </a>
+    
+                    <a href="http://www.linkedin.com/in/elainesabine" target="_blank">
+                        <img id="socialmedia" src="linkedin-icon.png" alt="Linked In" title="Linked In">
+                    </a>
+    
+                    <a href="https://devpost.com/elainesabine" target="_blank">
+                        <img id="socialmedia" src="devpost-icon.png" alt="Devpost" title="Devpost">
+                    </a>
+    
+                    <a href="http://www.github.com/elainesabine" target="_blank">
+                        <img id="socialmedia" src="github-icon.png" alt="Github" title="Github">
+                    </a>
+    
+                    <a href="http://www.instagram.com/elainesabine" target="_blank">
+                        <img id="socialmedia" src="instagram-icon.png" alt="Instagram" title="Instagram">
+                    </a>
+            </div>
+        </div>
+
+        
+        <div class="flex-item" id="pagesContainer">
+
+            <div class="pages" id="experienceTop"> 
+                
+                <ul id="slideshowExperience" class="slides">
+                    <li style="background: url(amazonlogo.png) center center no-repeat; background-size: 100%;"></li>
+                    <li style="background: url(asilogo.png) center center no-repeat; background-size: 100%; "></li>
+                </ul>
+                            
+            </div>
+                
+            <div class="pages" id="experienceBottom"> 
+                <div class="arrows">
+                    <img class="arrowresize" id="leftarrowexperience" src="left arrow.png" alt="left arrow">
+                    <img class="arrowresize" id="rightarrowexperience" src="right arrow.png" alt="right arrow">
+                    <div id="experiencecount"><span id="experiencenum">1</span> OF 2</div>
+                </div>
+                <div id="experienceContainer">
+                    <div class="experience" id="experience1">
+
+                        <h1>JR. SOFTWARE DEVELOPER
+
+                        </h1>
+                        <h2>AMAZON</h2>
+                        <h3>APRIL 2020 - DEC 2020</h3>
+
+                        <p><u>User Preferences Project</u>: The goal of this project was to create a user preferences menu where users can set a desired behavior for the justidiction editor and have that preference saved and persist between uses. I worked on creating the DynamoDB table, adding it to the cloud formation template, and using the AWS console to test code changes from my personal SAM stack. I learned a lot about creating APIs to get and receive data from DynamoDB, and also about error handling and the best practices on how to do error handling. I deepened my understanding on the redux store and how it is integrated with React components.</p>
+
+                        <p><u>Jurisdiction History Page Project</u>: The goal of this project was to create a page that displays all of the modifications made to a jurisdiction including the date, time, and author of the change. I created several mockups on how to visualize the data and held a design review meeting with over 10 team members. I received a lot of feedback from the meeting and applied them to improve my mockups and API design. I improved my skills on React and understanding the overall React lifecycle. I also learned quite a bit about the Facade pattern in Spring for the web app to to interact with subsystems.</p>
+
+                    </div>
+                    <div class="experience" id="experience2" style="display: none">
+                        <h1>WEB DEVELOPER</h1>
+                        <h2>CAL POLY ASSOCIATED STUDENTS, INC.</h2>
+                        <h3>FALL 2019 - MARCH 2020</h3>
+                        <p>- Maintained and developed a web application used by over 100 candidates for the Cal Poly ASI student government elections using HTML, CakePHP, and SQL.</p>
+                        <p>- Created multiple web forms connected to a SQL database to digitialize the submissions of the student government filing forms.</p>
+                        <p>- Made changes when needed to the ASI website to provide thousands of Cal Poly students with updated information. Some examples would be replacing the winter quarter fitness schedule with the spring quarter fitness schedule, and replacing outdated forms / PDF files. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="elainesabine.js"></script>
+    <script src="jquery.wipe.js"></script>
+</body>
+</html>
+

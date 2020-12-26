@@ -1,3 +1,10 @@
+// Wait for window load
+// $(window).load(function() {
+//     alert("Your book is overdue"); 
+//     // $(".se-pre-con").fadeOut("slow");;
+// });
+
+
 $(window).on('load',function () {
     $(".se-pre-con").fadeOut('slow');
 });
@@ -37,27 +44,22 @@ $("#navbarContainer div").on("mouseleave", function () {
 
 // clicking on about me
 $(".aboutMe").on("click", function () {
-    $(".pages").css("display", "none")
-    $("#aboutMeTop").css("display", "block")
-    $("#aboutMeBottom").css("display", "block")
+    $('#namewrapper img').imagesLoaded( { background: true }, function() {
+        window.location.replace("index.html");
+    });
 });
-
 
 // clicking on experience
 $(".experiences").on("click", function () {
     $('#slideshowExperience li').imagesLoaded( { background: true }, function() {
-        $(".pages").css("display", "none")
-        $("#experienceTop").css("display", "block")
-        $("#experienceBottom").css("display", "block")
-      });
+        window.location.replace("experience.html");
+    });
 });
 
 // clicking on projects
 $(".projects").on("click", function () {
     $('#slideshowProjects li').imagesLoaded( { background: true }, function() {
-        $(".pages").css("display", "none")
-        $("#projectsTop").css("display", "block")
-        $("#projectsBottom").css("display", "block")
+        window.location.replace("projects.html");
     });
 
 });
@@ -65,11 +67,10 @@ $(".projects").on("click", function () {
 // clicking on clubs
 $(".clubs").on("click", function () {
     $('#slideshowClubs li').imagesLoaded( { background: true }, function() {
-        $(".pages").css("display", "none")
-        $("#clubsTop").css("display", "block")
-        $("#clubsBottom").css("display", "block")
+        window.location.replace("clubs.html");
     });
 });
+
 
 
 var clickCountProjects = 0;
