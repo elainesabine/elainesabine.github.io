@@ -1,0 +1,1 @@
+  27/12/20 11.57.42 GMT+7: Starting composition “logo2”.  Output To: /Users/elainesabine/Documents/GitHub/elainesabine.github.io/logo animation/logo_[#####].png    27/12/20 11.57.46 GMT+7: Finished composition “logo2”.  Total Time Elapsed: 4 SecondsLog closed on 27/12/20 at 11.57.46 GMT+7

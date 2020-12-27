@@ -1,12 +1,5 @@
-// Wait for window load
-// $(window).load(function() {
-//     alert("Your book is overdue"); 
-//     // $(".se-pre-con").fadeOut("slow");;
-// });
-
-
 $(window).on('load',function () {
-    $(".se-pre-con").fadeOut('slow');
+    $(".se-pre-con").delay(500).fadeOut(500);
 });
 
 
@@ -299,4 +292,7 @@ $(document).ready(function() {
     });
 });
 
+var colors = ['#8ac8dc', '#ed6772', '#6ba7cf', '#4077ad'];
+var random_color = colors[Math.floor(Math.random() * colors.length)];
+$('.se-pre-con').css('background-color', random_color);
 
