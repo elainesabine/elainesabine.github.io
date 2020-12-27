@@ -1,5 +1,5 @@
 $(window).on('load',function () {
-    $(".se-pre-con").delay(500).fadeOut(500);
+    $(".se-pre-con").delay(1300).fadeOut(500);
 });
 
 
@@ -292,6 +292,7 @@ $(document).ready(function() {
     });
 });
 
+// choose random color for loading page
 var colors = ['#8ac8dc', '#ed6772', '#6ba7cf', '#4077ad'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 $('.se-pre-con').css('background-color', random_color);
