@@ -14,24 +14,42 @@
     font-style: normal;
   }
 
-a {
+  @font-face {
+    font-family: 'montserratbold';
+    src: url('assets/montserrat/Montserrat-Bold.woff2') format('woff2'),
+         url('assets/montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'montserratmedium';
+    src: url('assets/montserrat/Montserrat-Medium.woff2') format('woff2'),
+         url('assets/montserrat/Montserrat-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.projectLink {
     color: white;
     text-decoration: underline !important;
+    font-family: 'montserratlight';
 }
 
-a :hover {
+.projectLink :hover {
     color: white;
     text-decoration: underline !important;
 }
 
 
 body {
-    font-family: 'montserratlight';
+    font-family: 'montserratregular';
     margin: 0px;
     border: 0px;
     padding: 0px;
     background-color: #ffffff;
     cursor:default;
+    line-height: 1.5;
 }
 
 ul, li {
@@ -52,20 +70,34 @@ ul, li {
     min-width: auto;
 }
 
-h1, h2, h3 {
+h1 {
     margin: 0;
+    font-family: 'montserratbold';
+    line-height: initial;
 }
+
+
+h2, h3 {
+    margin: 0;
+    font-family: 'montserratmedium';
+    line-height: initial;
+}
+
 
 p {
     margin-bottom: 0px;
-    margin-top: 8px;
-    font-size: 1em;
-    line-height: 20px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 #navbarContainer {
     width: auto; 
     display: inline-flex;
+}
+
+#navbarContainerMobile {
+    display: none;
 }
 
 #navbarContainer div {
@@ -149,8 +181,9 @@ p {
 
 #myName {
     font-size: 40px;
-    font-family: 'montserratregular';
+    font-family: 'montserratmedium';
     margin-bottom: 10px;
+    line-height: initial;
 }
 
 #tagsUnderName {
@@ -260,7 +293,7 @@ a {
     color: white;
     padding: 0;
     display: none;
-    overflow: auto;
+    overflow-y: scroll;
     height: 50vh;
 }
 
@@ -269,7 +302,8 @@ a {
 }
 
 #aboutmecontainer {
-    margin: 20px;
+    padding: 2rem;
+    font-size: 1rem;
 }
 
 #aboutMeTop {
@@ -282,6 +316,8 @@ a {
     white-space: normal;
     display: block;
     color: white;
+    overflow-y: scroll;
+    
 }
 
 
@@ -296,7 +332,7 @@ a {
 }
 
 #projectscontainer, #clubscontainer, #experienceContainer {
-    padding: 20px;
+    padding: 2rem;
     height: fit-content;
 }
 
@@ -325,7 +361,7 @@ a {
     height: fit-content;
     padding-right: 20px;
     padding-bottom: 20px;
-    overflow: auto;
+    overflow-y: scroll;
 }
 
 .project {
@@ -379,25 +415,68 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     body {
-      overflow: unset
+      overflow: hidden;
     }
 
-    #navbarContainer, .navbutton, #pagesContainer{
+    #flex-container {
+        flex-wrap: wrap;
+    }
+
+    #navbarContainer, .navbutton, #nameContainer{
         display: none;
-        width: 0px;
     }
-    
-    #nameContainer {
-        width: 100vw;
-        top: 3vh;
+
+    #navbarContainerMobile {
+        display:block;
+        flex-basis: 100vw;
+        padding: 1rem 2rem;
+        box-shadow: 5px 10px #888888;
+    }
+
+    .navMobile {
+        display: inline-block;
+        line-height: 40px;
+        vertical-align: middle;
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+
+    .logoNavMobile {
+        width:40px;
+        height:auto; 
+        display: inline-block; 
+        vertical-align: middle;
+    }
+
+    .navMobile:hover{
+        text-decoration: underline;
+    }
+
+    .navMobileLinks {
+        float: right;
+    }
+
+    #pagesContainer {
+        flex-basis: 100vw;
         display: block;
     }
 
-    #myName {
-        font-size: 2.5em;
-        display: block;
+    #aboutMeNavMobile {
+        color:#4077ad
+    }
+
+    #experiencesNavMobile {
+        color:#6ba7cf
+    }
+
+    #projectsNavMobile {
+        color:#ed6772
+    }
+
+    #clubsNavMobile {
+        color:#8ac8dc
     }
     
     #aboutmephone {
@@ -406,20 +485,79 @@ a {
         padding: 20px;
     }
 
+    .pages {
+        width: 100%;
+    }
+
+    .pagesTop {
+        height: 40% !important;
+    }
+
+    .pagesBottom {
+        height: 54% !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      overflow: hidden;
+    }
+
     #flex-container {
-        display: block;
+        flex-wrap: wrap;
+    }
+
+    #navbarContainer, .navbutton, #nameContainer{
+        display: none;
+    }
+
+    #navbarContainerMobile {
+        display:block;
+        flex-basis: 100vw;
+        padding: 1rem;
+    }
+
+    .navMobile {
+        display: inline-block;
+        line-height: 20px;
+        vertical-align: middle;
+        /* margin-left: 1rem; */
+        text-decoration: none;
+        font-size: 0.7rem;
+    }
+
+    .logoNavMobile {
+        width:20px;
+        height:auto; 
+    }
+
+    .navMobile:hover{
+        text-decoration: underline;
+    }
+
+    .navMobileLinks {
+        float: right;
+    }
+
+    .topImage {
+        background-size: 100vh !important;
+    }
+
+    .aboutMeImage {
+        background-position: -310px!important;
     }
     
-    #namewrapper {
-        display: inline-block;
-        position: relative;
+    h1 {
+        font-size: 1.5rem;
     }
 
-    #socialmediadiv {
-        display: inline-block;
-        position: relative;
+    h2 {
+        font-size: 1.3rem;
     }
 
+    h3 {
+        font-size: 1.15rem;
+    }
   }
 
   /* pre loading gif */

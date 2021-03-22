@@ -18,6 +18,16 @@
             <div class="projects navbutton"><span id="projectsID" class="selected">PROJECTS</span></div>
             <div class="clubs navbutton"><span id="clubsID" class="clubsSpan">CLUBS</span></div>
         </div>
+
+        <div class="flex-item" id="navbarContainerMobile">
+            <img src="assets/logo2.png" alt="Logo" class="logoNavMobile">
+            <div class="navMobileLinks">
+                <div class="navMobile"> <a href="index.html" id="aboutMeNavMobile">ABOUT ME</a></div>
+                <div class="navMobile"> <a href="experience.html" id="experiencesNavMobile">EXPERIENCE</a></div>
+                <div class="navMobile"> <a href="projects.html" id="projectsNavMobile">PROJECTS</a></div>
+                <div class="navMobile"> <a href="clubs.html" id="clubsNavMobile">CLUBS</a></div>
+            </div>
+        </div>
             
         <div class="flex-item" id="nameContainer">
             <div id="namewrapper">
@@ -50,21 +60,21 @@
 
         
         <div class="flex-item" id="pagesContainer">
-            <div class="pages" id="projectsTop"> 
+            <div class="pages pagesTop" id="projectsTop"> 
                 <ul id="slideshowProjects" class="slides">
-                    <li style="background: url(assets/projects/blockfund.png) center center no-repeat; background-size: 100%;"></li>
-                    <li style="background: url(assets/projects/coping.png) center center no-repeat; background-size: 100%;"></li>
-                    <li style="background: url(assets/projects/cowovidimage.jpg) center center no-repeat; background-size: 100%;"></li>
-                    <li style="background: url(assets/projects/flashproject.png) center center no-repeat; background-size: 100%;"></li>
-                    <li style="background: url(assets/projects/athenahacks.jpg) center center no-repeat; background-size: 100%;"></li>
-                    <li style="background: url(assets/projects/cph2020.jpg) center center no-repeat; background-size: 100%;"></li>
-                    <li style="background: url(assets/projects/slohacks1.jpg) center center no-repeat; background-size: 100%;"></li>
-                    <li style="background: url(assets/projects/cph2.JPG) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/blockfund.png) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/coping.png) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/cowovidimage.jpg) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/flashproject.png) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/athenahacks.jpg) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/cph2020.jpg) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/slohacks1.jpg) center center no-repeat; background-size: 100%;"></li>
+                    <li class="topImage" style="background: url(assets/projects/cph2.JPG) center center no-repeat; background-size: 100%;"></li>
                 </ul>
                             
             </div>
                 
-            <div class="pages" id="projectsBottom"> 
+            <div class="pages pagesBottom" id="projectsBottom"> 
                 <div class="arrows">
                     <img class="arrowresize" id="leftarrowproject" src="assets/left arrow.png" alt="left arrow">
                     <img class="arrowresize" id="rightarrowproject" src="assets/right arrow.png" alt="right arrow">
@@ -74,42 +84,42 @@
                     <div class="project" id="project1">
                         <h1>BLOCKFUND</h1>
                         <h2>TREEHACKS 2021  | WINNER OF MOST SOCIAL IMPACT</h2>
-                        <p> <a href="https://rinkeby.kelas.dev/">rinkeby.kelas.dev</a> | <a href="https://devpost.com/software/blockfund">Devpost</a> </p> <br>
+                        <h3> <a href="https://rinkeby.kelas.dev/" class="projectLink">rinkeby.kelas.dev</a> | <a class="projectLink"href="https://devpost.com/software/blockfund">Devpost</a> </h3> 
                         <p>- Worked in a random team of 4 to build an app that democratises community funds through blockchain and voting technology.</p>
                         <p>- I used React.js to work on the front end, Figma to wireframe and plan the layout of the pages, and Adobe Illustrator to create graphics.</p>
                     </div>
                     <div class="project" id="project2" style="display: none">
                         <h1>CO.PING</h1>
                         <h2>COVID-19 Global Hackathon 1.0 2020</h2>
-                        <p> <a href="https://buildforcovid19.firebaseapp.com">buildforcovid19.firebaseapp.com</a> | <a href="https://devpost.com/software/co-ping">Devpost</a> | <a href="https://github.com/elainesabine/BuildForCOVID19">Github</a> | <a href="https://xd.adobe.com/view/bc3a4750-14e2-4edb-710c-ded5aeb0fc02-ca0b/?fullscreen">Prototype</a></p> <br>
+                        <h3> <a href="https://buildforcovid19.firebaseapp.com" class="projectLink">buildforcovid19.firebaseapp.com</a> | <a class="projectLink" href="https://devpost.com/software/co-ping">Devpost</a> | <a class="projectLink" href="https://github.com/elainesabine/BuildForCOVID19">Github</a> | <a class="projectLink" href="https://xd.adobe.com/view/bc3a4750-14e2-4edb-710c-ded5aeb0fc02-ca0b/?fullscreen">Prototype</a></h3> 
                         <p>- Created a mobile app that monitors the spread of COVID-19 and notifies the user if they are vulnerable to the virus.</p>
                         <p>- For this project, I used Ionic framework to create the front end. I also used Firebase and TypeScript to create the login page and store the user's email, password, and first/last name. I learned quite a bit about how to use services such as the Firebase authentication service. This was my first time working with Firebase and Ionic together so I had a lot of trouble trying to fetch the data from the backend to send to the front end. </p>
                     </div>
                     <div class="project" id="project3" style="display: none">
                         <h1>COWOVID19</h1>
                         <h2>LA HACKS 2020</h2>
-                        <p> <a href="http://cowovid19.tech/">cowovid19.tech</a> | <a href="https://devpost.com/software/cowovid-19">Devpost</a></p> <br>
+                        <h3> <a class="projectLink" href="http://cowovid19.tech/">cowovid19.tech</a> | <a class="projectLink" href="https://devpost.com/software/cowovid-19">Devpost</a></h3>
                         <p>- Cowovid19 is an app that visualizes Covid-19 cases in california over time. By keeping track of changes in metrics such as hospital capacity over the past few months, we can begin to understand which counties will need the most support in the days to come. Users who have the means to donate ventilators to hospitals would be directed to resources that take them there.</p>
                         <p>- I worked in a team of 5 and used D3.js, Flask, and jQuery to build this web app. I mainly worked on the front end to color code the map to indicate the severity of the COVID-19 cases in each county.</p>
                     </div>
                     <div class="project" id="project4" style="display: none">
                         <h1>FLASH</h1>
                         <h2>CSC 307 (INTRO TO SOFTWARE ENGINEERING) 2020</h2>
-                        <p> <a href="https://devpost.com/software/flash-kdgz1e">Devpost</a> <br> <br>
+                        <h3> <a class="projectLink" href="https://devpost.com/software/flash-kdgz1e">Devpost</a> </h3>
                         <p>- I worked in a team of 3 to create a productivity app intended to make its users lives more streamlined by providing them with a tool that they can use to track how they spend time relative to how they want to spend their time. The app was built with React, Node.js, and mySQL.</p>
                         <p>- We worked in an agile environment with standups every other day and weekly team retrospectives. We started by creating user stories and use cases for some of the features we wanted on the app. We then conducted spikes to research what type of frameworks would be best suitable to build the app. We used the Kanban board on Github Projects to keep track of our weekly sprints.</p>
                     </div>
                     <div class="project" id="project5" style="display: none">
                         <h1>AUTISM CARE </h1>
                         <h2>ATHENA HACKS 2019 | WINNER OF AZURE CHAMP CHALLENGE</h2>
-                        <p><a href="https://devpost.com/software/autism-app">Devpost</a> | <a href="https://github.com/athenahacks19">Github</a></p> <br>
+                        <h3><a class="projectLink" href="https://devpost.com/software/autism-app">Devpost</a> | <a class="projectLink" href="https://github.com/athenahacks19">Github</a></h3> 
                         <p>- Collaborated in a team of four using the Ionic Framework to make a mobile app that helps patients who have autism.</p>
                         <p>- I designed and worked on the front-end of the app with Photoshop, HTML, CSS, and JavaScript while using problem solving skills to work with a new framework.</p>
                     </div>
                     <div class="project" id="project6" style="display: none">
                         <h1>SURGE.ON</h1>
                         <h2>CAMP POLY HACKS 2020 | FIRST PLACE</h2>
-                        <p><a href="https://devpost.com/software/surge-on">Devpost</a> | <a href="https://github.com/ameru/surge.on/tree/master/unity-colab">Github</a></p> <br>
+                        <h3><a class="projectLink" href="https://devpost.com/software/surge-on">Devpost</a> | <a class="projectLink" href="https://github.com/ameru/surge.on/tree/master/unity-colab">Github</a></h3>
                         <p>- Created a virtual reality app that is meant to make it easier for underrepresented communities to explore different career paths in the health sector. Features of SURGE.on include an immersive VR training platform, online informational videos from industry experts, and an inclusive community forum for students to chat with similar-minded individuals.</p>
                         <p>- We used Unity, C#, and Oculus Quest to build our app.</p>
                     </div>
@@ -117,7 +127,7 @@
                     <div class="project" id="project7" style="display: none">
                         <h1>GO POLY SAFE</h1>
                         <h2>SLO HACKS 2019 | TOP 5 FINALIST</h2>
-                        <p><a href="https://devpost.com/software/go-poly-safe">Devpost</a> | <a href="https://github.com/ohnoitsjmo/go-poly-safe">Github</a></p> <br>
+                        <h3><a class="projectLink" href="https://devpost.com/software/go-poly-safe">Devpost</a> | <a class="projectLink" href="https://github.com/ohnoitsjmo/go-poly-safe">Github</a></h3> 
                         <p>- GoPolySafe is a location based web application that integrates safety, communication, and gives students a peace of mind around their campus community.</p>
                         <p>- Students are able to report incidents and view reported incidents on a map. Law enforcement or University Police are able to log into a more detailed dashboard of non-emergency reports and respond appropriately. This enables immediate communication between UPD and students regarding active incidents. </p>
                         <p>- For this project I assisted with the front-end development using Bootstrap to create a responsive UI.</p>
@@ -125,7 +135,7 @@
                     <div class="project" id="project8" style="display: none">
                         <h1>CAPTION THIS</h1>
                         <h2>CAMP POLY HACKS 2019 | BEST SERVANT LEADERSHIP HACK</h2>
-                        <p> <a href="https://caption-this-app.herokuapp.com/home">caption-this-app.heroku.com </a>| <a href="https://devpost.com/software/caption-this-fcya7m">Devpost</a> | <a href="https://github.com/ameru/caption-this">Github</a></p> <br>
+                        <h3> <a class="projectLink" href="https://caption-this-app.herokuapp.com/home">caption-this-app.heroku.com </a>| <a class="projectLink" href="https://devpost.com/software/caption-this-fcya7m">Devpost</a> | <a class="projectLink" href="https://github.com/ameru/caption-this">Github</a></h3>
                         <p>- Caption This is a website application that aids hearing impaired students in understanding course materials.</p>
                         <p>- This web app allows students to upload videos recorded during lectures and add closed captions to the uploaded videos, which hearing impaired students can then use as a resource.</p>
                         <p>-For this project, I used HTML, CSS and AngularJS to create the user interface. This was my first time working with Angular so it was a little challenging. However, I was able to solve most of my problems within the 24 hour time limit, and I definitely learnt a lot. </p>
