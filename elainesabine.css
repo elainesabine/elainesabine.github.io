@@ -293,7 +293,7 @@ a {
     color: white;
     padding: 0;
     display: none;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 50vh;
 }
 
@@ -316,7 +316,7 @@ a {
     white-space: normal;
     display: block;
     color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
     
 }
 
@@ -361,7 +361,7 @@ a {
     height: fit-content;
     padding-right: 20px;
     padding-bottom: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .project {
