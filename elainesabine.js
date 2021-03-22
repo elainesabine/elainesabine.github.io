@@ -303,23 +303,23 @@ var colors = ['#8ac8dc', '#ed6772', '#6ba7cf', '#4077ad'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 $('.se-pre-con').css('background-color', random_color);
 
-var curScroll = 0;
+// var curScroll = 0;
 
-$(window).bind('mousewheel DOMMouseScroll', function(e){
-    var evt = window.event || e;
-    var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
-    if ($('.pagesBottom:hover').length == 0) {
-        if(delta < 0) {
-            //scroll down
-            curScroll += 5;
-        }
-        else {
-            //scroll up
-            curScroll -= 5;
-        }
-        $('.pagesBottom').scrollTop(curScroll);
-    }
+// $(window).bind('mousewheel DOMMouseScroll', function(e){
+//     var evt = window.event || e;
+//     var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
+//     if ($('.pagesBottom:hover').length == 0) {
+//         if(delta < 0) {
+//             //scroll down
+//             curScroll += 5;
+//         }
+//         else {
+//             //scroll up
+//             curScroll -= 5;
+//         }
+//         $('.pagesBottom').scrollTop(curScroll);
+//     }
 
 
-    return false;
-}); 
+//     return false;
+// }); 

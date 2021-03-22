@@ -526,9 +526,9 @@ a {
         font-size: 0.7rem;
     }
 
-    /* #aboutMeContainer, #experienceContainer, #projectscontainer, #clubscontainer{
-        padding-bottom: 65px;
-    } */
+    #aboutMeContainer, #experienceContainer, #projectscontainer, #clubscontainer{
+        padding-bottom: 85px;
+    }
 
     _::-webkit-full-page-media, _:future, :root .safari_only {
         padding-bottom: 65px; 
