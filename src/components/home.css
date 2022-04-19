@@ -1,0 +1,9 @@
+.home-graphic{
+    width: 100%;
+}
+
+.about-me{
+    background-color: rgb(197, 176, 232);
+    min-height: 100vh;
+    padding: 50px;
+}
