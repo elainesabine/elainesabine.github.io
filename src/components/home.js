@@ -6,8 +6,11 @@ function Home() {
   
 
   return (
-    <div>
-        <img src={graphic} className="home-graphic"/>
+    <div className="home-page">
+        <div className="home-graphic-container">        
+            <img src={graphic} className="home-graphic"/>
+        </div>
+
         <div className="about-me">
             <h1 className="center-text">Hello! My name is Elaine.</h1>
         </div>

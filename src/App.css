@@ -5,3 +5,13 @@
 .center-div{
   margin: 0 auto;
 }
+
+.width-80 {
+  width: 80vw;
+  max-width: 1200px !important;
+  margin: auto;
+}
+
+#bootstrap-overrides .width-100 {
+  width: 100vw !important;
+}
