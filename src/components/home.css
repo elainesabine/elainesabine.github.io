@@ -99,7 +99,6 @@
 
 .chevron-read-more-container {
   animation: bounce 2s ease infinite;
-  left: 50%;
   position: absolute;
   bottom: 75px;
   display: flex;

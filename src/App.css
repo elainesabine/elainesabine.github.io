@@ -19,3 +19,35 @@
 .white {
   color: white;
 }
+
+/* fonts */
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/nunito-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Nunito Bold";
+  src: url("./assets/fonts/nunito-bold-webfont.woff2") format("woff2");
+}
+
+p {
+  font-family: "Nunito Bold";
+}
+
+h1 {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-size: 3.5em !important;
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3em !important;
+  }
+}

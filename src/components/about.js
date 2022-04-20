@@ -5,7 +5,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 function About() {
   return (
     <div className="about-me-page-container">
-      <h1 className="center-text">Hi there! I'm Elaine :)</h1>
+      <h1 className="center-text mb-5">Hi there, I'm Elaine :)</h1>
       <div className="width-80">
         <p>
           I am a fourth year Computer Science major at California Polytechnic
