@@ -1,5 +1,5 @@
 .socials-logo {
-  height: 50px;
+  height: 30px;
   margin-left: 5px;
 }
 
@@ -46,4 +46,8 @@
 .navbar-nav {
   text-align: right;
   justify-content: right;
+}
+
+.header-solid {
+  background-color: rgb(239, 169, 186) !important;
 }

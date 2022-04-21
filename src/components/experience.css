@@ -1,0 +1,72 @@
+.experience-page-container {
+  background-color: #f99595;
+  /* min-height: 120vh; */
+  position: relative;
+  height: fit-content;
+}
+
+.experience-body {
+  padding: 150px;
+}
+
+.slider-right,
+.slider-left {
+  width: 20vw;
+  cursor: pointer !important;
+}
+
+.experience-picture-container {
+  border: solid 10px #676696;
+  width: 80vw;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 8vw;
+}
+
+@media (max-width: 767px) {
+  .experience-body {
+    padding: 150px 50px 100px 50px;
+  }
+}
+
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single
+  .slider-single-content {
+  box-shadow: none !important;
+}
+
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single.proactive
+  .slider-single-content {
+  opacity: 0.8 !important;
+  transform: translateX(50%) translateY(-25%) scale(0.8) !important;
+}
+
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single.preactive
+  .slider-single-content {
+  opacity: 0.8 !important;
+  transform: translateX(-50%) translateY(-25%) scale(0.8) !important;
+}
+
+.yellow-scales-flipped {
+  background-image: url("../assets/yellow\ scales.png");
+  width: 100%;
+  background-repeat: repeat-x;
+  top: 0;
+  left: 0;
+  height: 53px;
+  position: absolute;
+  transform: scaleY(-1);
+}

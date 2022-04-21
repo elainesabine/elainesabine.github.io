@@ -1,0 +1,34 @@
+.projects-page-container {
+  background-color: #67baae;
+  /* min-height: 120vh; */
+  position: relative;
+  height: fit-content;
+}
+
+.projects-body {
+  padding: 150px 100px;
+}
+
+.project-icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-icon {
+  width: 275px;
+  height: 275px;
+
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .projects-body {
+    padding: 100px 20px;
+  }
+  .project-icon {
+    width: 300px;
+    height: 300px;
+  }
+}

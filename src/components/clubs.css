@@ -1,0 +1,22 @@
+.clubs-page-container {
+  background-color: #f99595;
+  /* min-height: 120vh; */
+  position: relative;
+  height: fit-content;
+}
+
+.clubs-body {
+  padding: 150px;
+}
+
+.clubcards-contaner {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .clubs-body {
+    padding: 50px;
+  }
+}

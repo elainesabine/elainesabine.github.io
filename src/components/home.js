@@ -8,38 +8,32 @@ import About from "./about";
 
 function Home() {
   return (
-    <div className="home-page">
-      <div className="landing-page-container">
-        <div className="home-graphic-container">
-          <img
-            src={graphicDesktop}
-            className="home-graphic home-graphic-desktop"
-          />
-          <img
-            src={graphicMobile}
-            className="home-graphic home-graphic-mobile"
-          />
-        </div>
-
-        <div className="header-fog-1"></div>
-        <div className="header-fog-2"></div>
-        <div className="yellow-scales"></div>
-
-        <div className="chevron-read-more-container">
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            style={{ height: "50px", color: "white" }}
-            className="chevron-single"
-          ></FontAwesomeIcon>
-
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            style={{ height: "50px", color: "white" }}
-            className="chevron-single"
-          ></FontAwesomeIcon>
-        </div>
+    <div className="landing-page-container">
+      <div className="home-graphic-container">
+        <img
+          src={graphicDesktop}
+          className="home-graphic home-graphic-desktop"
+        />
+        <img src={graphicMobile} className="home-graphic home-graphic-mobile" />
       </div>
-      <About />
+
+      <div className="header-fog-1"></div>
+      <div className="header-fog-2"></div>
+      <div className="yellow-scales"></div>
+
+      <div className="chevron-read-more-container">
+        <FontAwesomeIcon
+          icon={faChevronDown}
+          style={{ height: "50px", color: "white" }}
+          className="chevron-single"
+        ></FontAwesomeIcon>
+
+        <FontAwesomeIcon
+          icon={faChevronDown}
+          style={{ height: "50px", color: "white" }}
+          className="chevron-single"
+        ></FontAwesomeIcon>
+      </div>
     </div>
   );
 }

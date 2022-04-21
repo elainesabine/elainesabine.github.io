@@ -4,7 +4,7 @@ import email from "../assets/email.png";
 import github from "../assets/github.png";
 import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
-import "./Navigation.css";
+import "./navigation.css";
 
 function Navigation() {
   return (
@@ -13,12 +13,13 @@ function Navigation() {
       expand="xl"
       sticky="top"
       style={{ position: "fixed", width: "100vw" }}
+      id="nav"
     >
       <div id="navbarcontainer">
         <Nav>
           <Nav.Link href="/" className="mr-1">
             <div className="logo">
-              <h4 className="bold white">ELAINE SABINE</h4>
+              <p className="bold white mb-0">ELAINE SABINE</p>
             </div>
           </Nav.Link>
         </Nav>
@@ -26,16 +27,16 @@ function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className="mr-1">
-              <h4 className="bold white">ABOUT ME</h4>
+              <p className="bold white mb-0">ABOUT ME</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <h4 className="bold white">EXPERIENCE</h4>
+              <p className="bold white mb-0">EXPERIENCE</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <h4 className="bold white">PROJECTS</h4>
+              <p className="bold white mb-0">PROJECTS</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <h4 className="bold white">CLUBS</h4>
+              <p className="bold white mb-0">CLUBS</p>
             </Nav.Link>
           </Nav>
           <Nav>
