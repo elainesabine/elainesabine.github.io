@@ -20,7 +20,7 @@ function App() {
         $("#nav").addClass("header-solid");
       else $("#nav").removeClass("header-solid");
     });
-  });
+  }, []);
 
   return (
     <div id="bootstrap-overrides">

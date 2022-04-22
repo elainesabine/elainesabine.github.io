@@ -6,31 +6,36 @@
 }
 
 .experience-body {
-  padding: 150px;
-}
-
-.slider-right,
-.slider-left {
-  width: 20vw;
-  cursor: pointer !important;
+  padding: 200px 150px 150px 150px;
 }
 
 .experience-picture-container {
-  border: solid 10px #676696;
+  border: none;
   width: 80vw;
-  border-radius: 30px;
-  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  min-height: 400px;
+  min-width: 250px;
+  padding: 50px 50px 50px 80px;
 }
 
 .carousel-container {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 8vw;
+  /* margin-top: 8vw; */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .experience-body {
     padding: 150px 50px 100px 50px;
+  }
+
+  .experience-title {
+    font-size: 2rem !important;
+  }
+
+  .experience-picture-container {
+    padding: 30px 20px 30px 50px;
   }
 }
 
@@ -47,8 +52,8 @@
   .slider-content
   .slider-single.proactive
   .slider-single-content {
-  opacity: 0.8 !important;
-  transform: translateX(50%) translateY(-25%) scale(0.8) !important;
+  opacity: 0.3 !important;
+  transform: translateX(50%) translateY(0%) scale(0.5) !important;
 }
 
 .react-3d-carousel
@@ -56,8 +61,8 @@
   .slider-content
   .slider-single.preactive
   .slider-single-content {
-  opacity: 0.8 !important;
-  transform: translateX(-50%) translateY(-25%) scale(0.8) !important;
+  opacity: 0.3 !important;
+  transform: translateX(-50%) translateY(0%) scale(0.5) !important;
 }
 
 .yellow-scales-flipped {
@@ -69,4 +74,36 @@
   height: 53px;
   position: absolute;
   transform: scaleY(-1);
+}
+
+.experience-description {
+  position: relative;
+  z-index: 12;
+  /* left: 10%;
+  top: 10%; */
+  /* transform: translate(-50%, 25%); */
+  width: 100%;
+}
+
+.experience-background {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.experience-picture {
+  position: absolute;
+  z-index: 12;
+  right: 8%;
+  bottom: 13%;
+  width: 15%;
+  height: auto;
+}
+
+.react-3d-carousel .slider-container .slider-content .slider-single.active {
+  cursor: pointer;
 }
