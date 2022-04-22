@@ -1,5 +1,6 @@
 .experience-page-container {
-  background-color: #f99595;
+  /* background-color: #f99595; */
+  background-color: rgb(239, 169, 186);
   /* min-height: 120vh; */
   position: relative;
   height: fit-content;

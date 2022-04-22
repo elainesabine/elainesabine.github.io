@@ -12,7 +12,7 @@ function Projects() {
   return (
     <div className="projects-page-container">
       <div className="projects-body">
-        <h1 className="center-text mb-5">MY PROJECTS</h1>
+        <h1 className="center-text white mb-5">MY PROJECTS</h1>
 
         <div className="width-80">
           <div className="project-icon-container">
