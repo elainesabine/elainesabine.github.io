@@ -20,6 +20,10 @@
   color: white;
 }
 
+.dark-blue {
+  color: #373e59;
+}
+
 /* fonts */
 
 @font-face {

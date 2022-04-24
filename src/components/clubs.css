@@ -1,4 +1,6 @@
 .clubs-page-container {
+  /* background-color: #f99595; */
+  /* background-color: rgb(148, 174, 227); */
   background-color: #f99595;
   /* min-height: 120vh; */
   position: relative;
@@ -11,9 +13,11 @@
 
 .clubcards-contaner {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 @media (max-width: 767px) {
   .clubs-body {
