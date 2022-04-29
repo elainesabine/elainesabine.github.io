@@ -24,13 +24,13 @@ function Home() {
       <div className="chevron-read-more-container">
         <FontAwesomeIcon
           icon={faChevronDown}
-          style={{ height: "50px", color: "white" }}
+          style={{ height: "50px", color: "rgb(57, 57, 57)" }}
           className="chevron-single"
         ></FontAwesomeIcon>
 
         <FontAwesomeIcon
           icon={faChevronDown}
-          style={{ height: "50px", color: "white" }}
+          style={{ height: "50px", color: "rgb(57, 57, 57)" }}
           className="chevron-single"
         ></FontAwesomeIcon>
       </div>

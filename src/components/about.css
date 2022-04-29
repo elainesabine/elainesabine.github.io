@@ -1,9 +1,7 @@
 .about-me-page-container {
-  /* background-color: #8774b5; */
-  /* background-color: rgb(166, 160, 209); */
-  background-color: #fcd99c;
-  /* min-height: 120vh; */
+  background-color:  #a886cf;
   padding: 100px;
+  min-height: 90vh;
 }
 
 @media (max-width: 767px) {

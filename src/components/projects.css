@@ -1,6 +1,6 @@
 .projects-page-container {
-  background-color: #67baae;
-  /* min-height: 120vh; */
+  background-color: rgb(213, 213, 213);
+  min-height: 90vh;
   position: relative;
   height: fit-content;
 }

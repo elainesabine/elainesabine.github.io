@@ -19,7 +19,7 @@ function Navigation() {
         <Nav>
           <Nav.Link href="/" className="mr-1">
             <div className="logo">
-              <p className="bold white mb-0">ELAINE SABINE</p>
+              <p className="bold dark-blue mb-0">ELAINE SABINE</p>
             </div>
           </Nav.Link>
         </Nav>
@@ -27,16 +27,16 @@ function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className="mr-1">
-              <p className="bold white mb-0">ABOUT ME</p>
+              <p className="bold dark-blue mb-0">ABOUT ME</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <p className="bold white mb-0">EXPERIENCE</p>
+              <p className="bold dark-blue mb-0">EXPERIENCE</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <p className="bold white mb-0">PROJECTS</p>
+              <p className="bold dark-blue mb-0">PROJECTS</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <p className="bold white mb-0">CLUBS</p>
+              <p className="bold dark-blue mb-0">CLUBS</p>
             </Nav.Link>
           </Nav>
           <Nav>

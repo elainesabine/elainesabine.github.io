@@ -1,10 +1,8 @@
 .clubs-page-container {
-  /* background-color: #f99595; */
-  /* background-color: rgb(148, 174, 227); */
-  background-color: #f99595;
-  /* min-height: 120vh; */
+  background-color: rgb(248, 185, 0);
   position: relative;
   height: fit-content;
+  min-height: 90vh;
 }
 
 .clubs-body {

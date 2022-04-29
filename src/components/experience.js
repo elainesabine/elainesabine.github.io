@@ -86,7 +86,7 @@ function Experience() {
     <div className="experience-page-container">
       <div className="yellow-scales-flipped"></div>
       <div className="experience-body">
-        <h1 className="center-text mb-5 dark-blue">my work experience</h1>
+        <h1 className="center-text mb-5 white">my work experience</h1>
 
         <div className="carousel-container">
           <Carousel
@@ -96,7 +96,7 @@ function Experience() {
             arrows={false}
           />
         </div>
-        <p className="center-text dark-blue bold mt-5 mb-0">
+        <p className="center-text white bold mt-5 mb-0">
           Swipe to see more & click to read about it.
         </p>
       </div>

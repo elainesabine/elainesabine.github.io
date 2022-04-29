@@ -17,11 +17,11 @@
 }
 
 .white {
-  color: white;
+  color: rgb(230, 230, 230);
 }
 
 .dark-blue {
-  color: #373e59;
+  color: rgb(57, 57, 57);
 }
 
 /* fonts */
