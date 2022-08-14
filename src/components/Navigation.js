@@ -1,10 +1,10 @@
-import { Navbar, Nav, Container } from "react-bootstrap";
-import devpost from "../assets/devpost.png";
-import email from "../assets/email.png";
-import github from "../assets/github.png";
-import instagram from "../assets/instagram.png";
-import linkedin from "../assets/linkedin.png";
-import "./navigation.css";
+import { Navbar, Nav, Container } from 'react-bootstrap'
+import devpost from '../assets/devpost.png'
+import email from '../assets/email.png'
+import github from '../assets/github.png'
+import instagram from '../assets/instagram.png'
+import linkedin from '../assets/linkedin.png'
+import './navigation.css'
 
 function Navigation() {
   return (
@@ -12,14 +12,14 @@ function Navigation() {
       collapseOnSelect
       expand="xl"
       sticky="top"
-      style={{ position: "fixed", width: "100vw" }}
+      style={{ position: 'fixed', width: '100vw' }}
       id="nav"
     >
       <div id="navbarcontainer">
         <Nav>
           <Nav.Link href="/" className="mr-1">
             <div className="logo">
-              <p className="bold dark-blue mb-0">ELAINE SABINE</p>
+              <p className="bold white mb-0">ELAINE SABINE</p>
             </div>
           </Nav.Link>
         </Nav>
@@ -27,16 +27,16 @@ function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className="mr-1">
-              <p className="bold dark-blue mb-0">ABOUT ME</p>
+              <p className="bold white mb-0">ABOUT ME</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <p className="bold dark-blue mb-0">EXPERIENCE</p>
+              <p className="bold white mb-0">EXPERIENCE</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <p className="bold dark-blue mb-0">PROJECTS</p>
+              <p className="bold white mb-0">PROJECTS</p>
             </Nav.Link>
             <Nav.Link href="/" className="mr-1">
-              <p className="bold dark-blue mb-0">CLUBS</p>
+              <p className="bold white mb-0">CLUBS</p>
             </Nav.Link>
           </Nav>
           <Nav>
@@ -68,6 +68,6 @@ function Navigation() {
         </Navbar.Collapse>
       </div>
     </Navbar>
-  );
+  )
 }
-export default Navigation;
+export default Navigation

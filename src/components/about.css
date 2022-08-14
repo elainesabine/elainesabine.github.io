@@ -1,11 +1,59 @@
-.about-me-page-container {
-  background-color:  #a886cf;
-  padding: 100px;
-  min-height: 90vh;
+.about-page-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--light-brown);
 }
 
-@media (max-width: 767px) {
-  .about-me-page-container {
-    padding: 50px;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+.about-text {
+  width: 60%;
+}
+.skills-favorites-container {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.favs-line {
+  display: flex;
+  gap: 20px;
+}
+
+.skills-languages {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hobbies-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-hobby {
+  width: 300px;
+}
+
+@media (max-width: 750px) {
+  .skills-favorites-container {
+    flex-direction: column;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text {
+    width: 90%;
   }
 }

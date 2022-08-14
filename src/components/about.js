@@ -1,57 +1,112 @@
-import { useState, useEffect } from "react";
-import "./about.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from 'react'
+import './about.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faChevronDown,
+  faGamepad,
+  faMusic,
+  faTelevision,
+} from '@fortawesome/free-solid-svg-icons'
+import placeholder1 from '../assets/placeholder1.png'
+import placeholder2 from '../assets/placeholder2.png'
+import { Button } from 'react-bootstrap'
+
 function About() {
   return (
-    <div className="about-me-page-container">
-      <h1 className="center-text mb-5 white">Hi there, I'm Elaine :)</h1>
-      <div className="width-80">
-        <p className="white">
-          I am a fourth year Computer Science major at{" "}
-          <strong>California Polytechnic State University</strong>. My main
-          technical focus is <strong>full-stack web development, </strong>
-          and my other areas of interest include{" "}
-          <strong>Web3 development</strong> and <strong>UI / UX.</strong>
-        </p>
-        {/* <p className="white">
-          After discovering my passion for web development, I decided to start
-          participating in <strong>hackathons</strong> to collaborate with other
-          students to use technology to tackle social problems. Over many
-          hackathons, I have developed several web apps intended to improve the
-          lives of people in our community, such as increasing safety of
-          students living on campus, empowering neighborhoods with tools and
-          data, and providing an extra resource for students with hearing
-          impairments.
-        </p> */}
-        {/* <p className="white">
-          I have worked part time as an{" "}
-          <strong>IT programmer student assistant</strong> and have created a
-          web application to simplify the process of applying for student
-          government at Cal Poly. I have also interned year-round at
-          <strong> Amazon</strong>, working with React, Java, and DynamoDB to
-          create new features for an internal app.
-        </p> */}
-        <p className="white">
-          I am highly involved in the women in
-          technology community at Cal Poly through clubs such as{" "}
-          <strong>Society of Women Engineers (SWE)</strong>, and{" "}
-          <strong>Women Involved in Software and Hardware (WISH)</strong>. I was
-          also on the directors team of <strong>UX Fest</strong>, which is Cal
-          Poly’s first UX competition founded by women of color that aims to
-          create an inclusive space for students to learn more about UX.
-        </p>
-        <p className="white">
-          Some of my hobbies include front end design, customizing mechanical
-          keyboards, and making piano covers.
-        </p>
-        <p className="white">
-          Starting in August, I will be working full time at{" "}
-          <strong>Snap Inc.</strong> as an iOS developer on the camera team.
-        </p>
+    <>
+      <div className="about-page-container">
+        <div className="width-80-small dark-brown page-padding">
+          <div className="about-container">
+            <div className="about-text">
+              <h1 className=" mb-50">
+                a little bit <span className="brown-shadow">about me.</span>
+              </h1>
+              <p>
+                i graduated from california polytechnic state university with a
+                degree in computer science. i am currently located in los
+                angeles working as an iOS engineer at snap inc.
+              </p>
+              <p>
+                i enjoy doing web development and like to build websites for
+                small businesses. in late 2021, i co-founded a web3 game along
+                with a whitelist marketplace site.
+              </p>
+            </div>
+            <img src={placeholder1} />
+          </div>
+          <div className="skills-favorites-container">
+            <div>
+              <h2 className="mb-20">
+                technical <span className="">skills.</span>{' '}
+              </h2>
+              <div className="skills-languages">
+                <Button className="button-small rose-bg grey">
+                  <p className="mb-0">react</p>
+                </Button>
+                <Button className="button-small light-green-bg grey">
+                  <p className="mb-0">solidity</p>
+                </Button>
+                <Button className="button-small beige-bg grey">
+                  <p className="mb-0">html</p>
+                </Button>
+                <Button className="button-small grey-bg">
+                  <p className="mb-0">javascript</p>
+                </Button>
+                <Button className="button-small light-purple-bg">
+                  <p className="mb-0">objective c</p>
+                </Button>
+                <Button className="button-small rose-bg grey">
+                  <p className="mb-0">node.js</p>
+                </Button>
+                <Button className="button-small light-green-bg grey">
+                  <p className="mb-0">sql</p>
+                </Button>
+                <Button className="button-small beige-bg grey">
+                  <p className="mb-0">python</p>
+                </Button>
+              </div>
+            </div>
+            <div>
+              <h2 className=" mb-20">favorites.</h2>
+              <div className="favs-line">
+                <FontAwesomeIcon icon={faMusic} />
+                <p>all 4 nothing</p>
+              </div>
+              <div className="favs-line">
+                <FontAwesomeIcon icon={faTelevision} />
+                <p>the good place</p>
+              </div>
+              <div className="favs-line">
+                {' '}
+                <FontAwesomeIcon icon={faGamepad} />
+                <p>hyper light drifter</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="center-text mb-50">personal interests.</h2>
+          <div className="hobbies-container center-text">
+            <div className="single-hobby">
+              <img src={placeholder1} />
+              <p>
+                making piano covers of video game music and anime/kdrama OSTs
+              </p>
+            </div>
+
+            <div className="single-hobby">
+              <img src={placeholder2} />
+              <p>building and customizing mechanical keyboards</p>
+            </div>
+
+            <div className="single-hobby">
+              <img src={placeholder1} />
+              <p>bullet journaling </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
-export default About;
+export default About

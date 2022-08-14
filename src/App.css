@@ -1,3 +1,17 @@
+:root {
+  --light-pink: #ffd9d9;
+  --dark-pink: #b95b6f;
+  --dark-brown: #96766c;
+  --light-brown: #fae9df;
+  --white: #ffffff;
+  --beige: #edcdcd;
+  --grey: #818090;
+  --rose: #f8c1cd;
+  --light-green: #becaca;
+  --light-purple: #9b9aaf;
+  --dark-purple: #818090;
+}
+
 .center-text {
   text-align: center;
 }
@@ -6,55 +20,154 @@
   margin: 0 auto;
 }
 
+.center-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* min-height: 90vh; */
+}
+
 .width-80 {
   width: 80vw;
-  max-width: 1200px !important;
+  max-width: 1800px !important;
   margin: auto;
 }
 
-#bootstrap-overrides .width-100 {
-  width: 100vw !important;
+.width-80-small {
+  width: 80vw;
+  max-width: 1000px !important;
+  margin: auto;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.page-padding {
+  padding: 100px 0;
+}
+
+/* colors */
 .white {
-  color: rgb(230, 230, 230);
+  color: var(--white);
 }
 
-.dark-blue {
-  color: rgb(57, 57, 57);
+.light-pink {
+  color: var(--light-pink);
+}
+
+.dark-pink {
+  color: var(--dark-pink);
+}
+
+.pink-shadow {
+  color: var(--light-pink);
+  text-shadow: 5px 5px 15px var(--dark-pink);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pink-shadow:hover {
+  color: var(--dark-brown);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-shadow: none;
+}
+
+.light-brown {
+  color: var(--light-brown);
+}
+
+.dark-brown {
+  color: var(--dark-brown) !important;
+}
+
+.grey {
+  color: var(--grey) !important;
+}
+
+.brown-shadow {
+  color: var(--light-brown);
+  text-shadow: 5px 5px 15px var(--dark-brown);
+}
+
+/* backgrounds */
+.dark-pink-bg {
+  background-color: var(--dark-pink) !important;
+}
+
+.light-green-bg {
+  background-color: var(--light-green) !important;
+}
+
+.light-brown-bg {
+  background-color: var(--light-brown) !important;
+}
+
+.light-purple-bg {
+  background-color: var(--light-purple) !important;
+}
+
+.beige-bg {
+  background-color: var(--beige) !important;
+}
+.grey-bg {
+  background-color: var(--grey) !important;
+}
+.rose-bg {
+  background-color: var(--rose) !important;
+}
+
+/* buttons */
+.button-brown {
+  background-color: var(--dark-brown) !important;
+  border: none !important;
+  padding: 15px 35px !important;
+  border-radius: 50px !important;
+  outline: none !important;
+}
+
+.button-small {
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 30px !important;
+  font-size: 12px !important;
 }
 
 /* fonts */
 
 @font-face {
-  font-family: "Nunito";
-  src: url("./assets/fonts/nunito-regular-webfont.woff2") format("woff2");
+  font-family: 'Nunito';
+  src: url('./assets/fonts/nunito-regular-webfont.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Nunito Bold";
-  src: url("./assets/fonts/nunito-bold-webfont.woff2") format("woff2");
+  font-family: 'Nunito Bold';
+  src: url('./assets/fonts/nunito-bold-webfont.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Gotham Rounded";
-  src: url("./assets/fonts/Gotham-Rounded-Book.woff") format("woff2");
+  font-family: 'Gotham Rounded';
+  src: url('./assets/fonts/Gotham-Rounded-Book.woff') format('woff2');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Gotham Rounded";
-  src: url("./assets/fonts/Gotham-Rounded-Bold.woff") format("woff2");
+  font-family: 'Gotham Rounded';
+  src: url('./assets/fonts/Gotham-Rounded-Bold.woff') format('woff2');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT";
-  src: url("./assets/fonts/HelveticaNeue.woff2") format("woff2");
+  font-family: 'Helvetica Neue LT';
+  src: url('./assets/fonts/HelveticaNeue.woff2') format('woff2');
 }
 
 p {
-  font-family: "Gotham Rounded";
+  font-family: 'Gotham Rounded';
 }
 
 p.bold {
@@ -62,14 +175,17 @@ p.bold {
 }
 
 h1 {
-  font-family: "Helvetica Neue LT";
-  font-size: 3.5em !important;
-  text-transform: uppercase;
+  font-family: 'Futura';
+  font-size: 4em !important;
+  /* text-transform: uppercase; */
+  font-weight: bold !important;
 }
 
 h2 {
-  font-family: "Helvetica Neue LT";
-  text-transform: uppercase;
+  font-family: 'Futura';
+  font-size: 2.8em !important;
+  /* text-transform: uppercase; */
+  font-weight: bold !important;
 }
 
 html {
@@ -77,11 +193,11 @@ html {
 }
 
 p span.bold {
-  font-family: "Gotham Rounded Bold";
+  font-family: 'Gotham Rounded';
 }
 
-@media (max-width: 767px) {
+@media (max-width: 450px) {
   h1 {
-    font-size: 3em !important;
+    font-size: 2.8em !important;
   }
 }
