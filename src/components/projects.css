@@ -1,0 +1,61 @@
+.projects-page-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--light-brown);
+}
+
+.project-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin-bottom: 100px;
+}
+
+.project-row {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+
+.project-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project-desc-container {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.project-image-accent {
+  width: 100%;
+  height: 400px;
+  background-color: var(--dark-brown);
+  border-radius: 50px;
+  transform: rotate(-7deg);
+  position: absolute;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 5;
+  height: 400px;
+}
+
+.project-image img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}

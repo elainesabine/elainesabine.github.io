@@ -18,8 +18,8 @@ function About() {
         <div className="width-80-small dark-brown page-padding">
           <div className="about-container">
             <div className="about-text">
-              <h1 className=" mb-50">
-                a little bit <span className="brown-shadow">about me.</span>
+              <h1 className="">
+                a little bit <span className="dark-pink">about me.</span>
               </h1>
               <p>
                 i graduated from california polytechnic state university with a
@@ -32,11 +32,29 @@ function About() {
                 with a whitelist marketplace site.
               </p>
             </div>
-            <img src={placeholder1} />
+            <div className="about-image">
+              <img src={placeholder1} />
+            </div>
           </div>
           <div className="skills-favorites-container">
             <div>
-              <h2 className="mb-20">
+              <h2 className=" ">favorites.</h2>
+              <div className="favs-line">
+                <FontAwesomeIcon icon={faMusic} />
+                <p>all 4 nothing</p>
+              </div>
+              <div className="favs-line">
+                <FontAwesomeIcon icon={faTelevision} />
+                <p>the good place</p>
+              </div>
+              <div className="favs-line">
+                {' '}
+                <FontAwesomeIcon icon={faGamepad} />
+                <p>hyper light drifter</p>
+              </div>
+            </div>
+            <div>
+              <h2 className="">
                 technical <span className="">skills.</span>{' '}
               </h2>
               <div className="skills-languages">
@@ -66,25 +84,9 @@ function About() {
                 </Button>
               </div>
             </div>
-            <div>
-              <h2 className=" mb-20">favorites.</h2>
-              <div className="favs-line">
-                <FontAwesomeIcon icon={faMusic} />
-                <p>all 4 nothing</p>
-              </div>
-              <div className="favs-line">
-                <FontAwesomeIcon icon={faTelevision} />
-                <p>the good place</p>
-              </div>
-              <div className="favs-line">
-                {' '}
-                <FontAwesomeIcon icon={faGamepad} />
-                <p>hyper light drifter</p>
-              </div>
-            </div>
           </div>
 
-          <h2 className="center-text mb-50">personal interests.</h2>
+          <h2 className="center-text">personal interests.</h2>
           <div className="hobbies-container center-text">
             <div className="single-hobby">
               <img src={placeholder1} />

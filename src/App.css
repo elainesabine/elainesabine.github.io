@@ -1,7 +1,7 @@
 :root {
   --light-pink: #ffd9d9;
-  --dark-pink: #b95b6f;
-  --dark-brown: #96766c;
+  --dark-pink: #f08ba1;
+  --dark-brown: #7e5f56;
   --light-brown: #fae9df;
   --white: #ffffff;
   --beige: #edcdcd;
@@ -10,6 +10,7 @@
   --light-green: #becaca;
   --light-purple: #9b9aaf;
   --dark-purple: #818090;
+  --dark-blue: #5b5b6f;
 }
 
 .center-text {
@@ -36,20 +37,24 @@
 
 .width-80-small {
   width: 80vw;
-  max-width: 1000px !important;
+  max-width: 1200px !important;
   margin: auto;
 }
 
 .mb-20 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .mb-50 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
 }
 
 .page-padding {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 /* colors */
@@ -63,6 +68,10 @@
 
 .dark-pink {
   color: var(--dark-pink);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
 }
 
 .pink-shadow {
@@ -92,6 +101,12 @@
 .brown-shadow {
   color: var(--light-brown);
   text-shadow: 5px 5px 15px var(--dark-brown);
+}
+
+.purple-shadow {
+  color: var(--light-purple);
+  text-shadow: 5px 5px 5px var(--dark-purple);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* backgrounds */
@@ -124,6 +139,14 @@
 /* buttons */
 .button-brown {
   background-color: var(--dark-brown) !important;
+  border: none !important;
+  padding: 15px 35px !important;
+  border-radius: 50px !important;
+  outline: none !important;
+}
+
+.button-pink {
+  background-color: var(--dark-pink) !important;
   border: none !important;
   padding: 15px 35px !important;
   border-radius: 50px !important;
@@ -179,6 +202,8 @@ h1 {
   font-size: 4em !important;
   /* text-transform: uppercase; */
   font-weight: bold !important;
+  /* line-height: 1 !important; */
+  margin-bottom: 0.5em !important;
 }
 
 h2 {
@@ -186,6 +211,21 @@ h2 {
   font-size: 2.8em !important;
   /* text-transform: uppercase; */
   font-weight: bold !important;
+  margin-bottom: 0.5em !important;
+}
+
+h3 {
+  font-family: 'Futura';
+  font-size: 2em !important;
+  font-weight: bold !important;
+  margin-bottom: 0.5em !important;
+}
+
+h4 {
+  font-family: 'Futura';
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+  margin-bottom: 0.5em !important;
 }
 
 html {

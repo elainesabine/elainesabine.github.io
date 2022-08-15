@@ -7,12 +7,12 @@ function Home() {
   return (
     <>
       <div className="landing-page-container">
-        <div className="width-80 dark-pink">
+        <div className="width-80 dark-brown">
           <div className="landing-intro-container">
             <div className="landing-intro-text">
-              <h1>hi there!</h1>
-              <h1 className=" mb-20">
-                i'm <span className="pink-shadow">elaine.</span>
+              <h1 className="dark-brown">
+                <span>hi there!</span> <br /> i'm{' '}
+                <span className=" dark-pink">elaine.</span>
               </h1>
               <p>
                 i am a software engineer with a passion for developing beautiful
@@ -24,18 +24,6 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="contact-page-container dark-pink">
-        <div className="contact-text-container">
-          <h2 className="mb-20">lets get in touch.</h2>
-          <p>
-            drop a message if you want to work together, ask me any questions,
-            or have a chat :)
-          </p>
-        </div>
-        <Button className="button-brown">
-          <p className="mb-0">say hello</p>
-        </Button>
       </div>
     </>
   )
