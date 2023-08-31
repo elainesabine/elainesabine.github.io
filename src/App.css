@@ -1,0 +1,271 @@
+:root {
+  --light-pink: #ffd9d9;
+  --dark-pink: #f08ba1;
+  --dark-brown: #7e5f56;
+  --light-brown: #fae9df;
+  --white: #ffffff;
+  --beige: #edcdcd;
+  --grey: #818090;
+  --rose: #f8c1cd;
+  --light-green: #becaca;
+  --light-purple: #9b9aaf;
+  --dark-purple: #818090;
+  --dark-blue: #5b5b6f;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-div {
+  margin: 0 auto;
+}
+
+.center-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* min-height: 90vh; */
+}
+
+.width-80 {
+  width: 80vw;
+  max-width: 1800px !important;
+  margin: auto;
+}
+
+.width-80-small {
+  width: 80vw;
+  max-width: 1200px !important;
+  margin: auto;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.page-padding {
+  padding: 150px 0;
+}
+
+/* colors */
+.white {
+  color: var(--white);
+}
+
+.light-pink {
+  color: var(--light-pink);
+}
+
+.dark-pink {
+  color: var(--dark-pink);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
+.pink-shadow {
+  color: var(--light-pink);
+  text-shadow: 5px 5px 15px var(--dark-pink);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pink-shadow:hover {
+  color: var(--dark-brown);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-shadow: none;
+}
+
+.light-brown {
+  color: var(--light-brown);
+}
+
+.dark-brown {
+  color: var(--dark-brown) !important;
+}
+
+.grey {
+  color: var(--grey) !important;
+}
+
+.brown-shadow {
+  color: var(--light-brown);
+  text-shadow: 5px 5px 15px var(--dark-brown);
+}
+
+.purple-shadow {
+  color: var(--light-purple);
+  text-shadow: 5px 5px 5px var(--dark-purple);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* backgrounds */
+.dark-pink-bg {
+  background-color: var(--dark-pink) !important;
+}
+
+.light-green-bg {
+  background-color: var(--light-green) !important;
+}
+
+.light-brown-bg {
+  background-color: var(--light-brown) !important;
+}
+
+.light-purple-bg {
+  background-color: var(--light-purple) !important;
+}
+
+.beige-bg {
+  background-color: var(--beige) !important;
+}
+.grey-bg {
+  background-color: var(--grey) !important;
+}
+.rose-bg {
+  background-color: var(--rose) !important;
+}
+
+/* buttons */
+.button-brown {
+  background-color: var(--dark-brown) !important;
+  border: none !important;
+  padding: 15px 35px !important;
+  border-radius: 50px !important;
+  outline: none !important;
+}
+
+.button-pink {
+  background-color: var(--dark-pink) !important;
+  border: none !important;
+  padding: 15px 35px !important;
+  border-radius: 50px !important;
+  outline: none !important;
+}
+
+.button-small {
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 30px !important;
+  font-size: 12px !important;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/nunito-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito Bold';
+  src: url('./assets/fonts/nunito-bold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('./assets/fonts/Gotham-Rounded-Book.woff') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('./assets/fonts/Gotham-Rounded-Bold.woff') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT';
+  src: url('./assets/fonts/HelveticaNeue.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./assets/fonts/futura_extra_black_font-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Futura-heavy';
+  src: url('./assets/fonts/futura_heavy_font-webfont.woff2') format('woff2');
+}
+
+
+p {
+  font-family: 'Gotham Rounded';
+}
+
+p.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Futura';
+  font-size: 4em !important;
+  /* text-transform: uppercase; */
+  font-weight: bold !important;
+  /* line-height: 1 !important; */
+  margin-bottom: 0.5em !important;
+}
+
+h2 {
+  font-family: 'Futura';
+  font-size: 2.8em !important;
+  /* text-transform: uppercase; */
+  font-weight: bold !important;
+  margin-bottom: 0.5em !important;
+}
+
+h3 {
+  font-family: 'Futura';
+  font-size: 2em !important;
+  font-weight: bold !important;
+  margin-bottom: 0.5em !important;
+}
+
+h4 {
+  font-family: 'Futura-heavy';
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+  margin-bottom: 0.5em !important;
+}
+
+html {
+  font-size: 18px;
+}
+
+p span.bold {
+  font-family: 'Gotham Rounded';
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 2.8em !important;
+  }
+
+  h2 {
+    font-size: calc(2rem + 0.6vw) !important;
+  }
+
+  h3 {
+    font-size: calc(1.5rem + 0.6vw) !important;
+  }
+
+  h4 {
+    font-size: calc(1rem + 0.6vw) !important;
+  }
+}
+
+
+body {
+  overflow-x: hidden;
+}
