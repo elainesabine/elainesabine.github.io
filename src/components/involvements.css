@@ -1,0 +1,28 @@
+.involvememts-page-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--light-purple);
+}
+
+.column-container {
+  display: flex;
+  gap: 10vw;
+}
+.left-column {
+  width: 50%;
+}
+
+.left-column-small {
+  width: 60px;
+  flex-wrap: wrap;
+}
+
+.right-column {
+  /* flex: 1; */
+  display: flex;
+}
+
+.single-involvement-container {
+  border-top: 5px var(--light-brown) solid;
+  padding: 20px 0;
+}

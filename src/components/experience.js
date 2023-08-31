@@ -1,15 +1,5 @@
-import { useState, useEffect, useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import './experience.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faChevronDown,
-  faGamepad,
-  faMusic,
-  faTelevision,
-} from '@fortawesome/free-solid-svg-icons'
-import placeholder1 from '../assets/placeholder1.png'
-import placeholder2 from '../assets/placeholder2.png'
-import { Button } from 'react-bootstrap'
 import $ from 'jquery'
 
 function Experience() {
@@ -20,12 +10,27 @@ function Experience() {
 
   const scrollTimeline = () => {
     const maxHeight = $('.all-experience-container').height()
-    const maxScrollTop = $(document).height() - $(window).height()
-    const multiplier = maxHeight / maxScrollTop
+    const topOfDiv =
+      $('.experience-page-container').offset().top - $(window).height() * 0.25
+
     $(window).on('scroll', () => {
       var scrollTop = $(window).scrollTop()
+      var curHeight = scrollTop - topOfDiv - $(window).height() * 0.25
 
-      if (scrollTop < 5) {
+      $('.timeline-line').height(curHeight + 20)
+      $('.bottom-circle').css({
+        top: curHeight,
+      })
+
+      if (curHeight > maxHeight) {
+        $('.timeline-line').height(maxHeight + 20)
+        $('.bottom-circle').css({ top: maxHeight })
+      }
+      console.log('scrollTop - topOfDiv', scrollTop - topOfDiv)
+      if (curHeight < 0) {
+        $('.timeline-line').height(0)
+        $('.bottom-circle').css({ top: 0 })
+
         $('.timeline-line').css({ opacity: 0 })
         $('.bottom-circle').css({ opacity: 0 })
         $('.top-circle').css({ opacity: 0 })
@@ -34,9 +39,6 @@ function Experience() {
         $('.bottom-circle').css({ opacity: 1 })
         $('.top-circle').css({ opacity: 1 })
       }
-
-      $('.timeline-line').height(scrollTop * multiplier + 20)
-      $('.bottom-circle').css({ top: scrollTop * multiplier })
     })
   }
 
@@ -54,28 +56,32 @@ function Experience() {
 
             <div className="experience-row right-exp">
               <div className="single-experience-container ">
-                <h3 className="purple-shadow mb-0">2022</h3>
+                <h3 className="light- mb-0">2022</h3>
                 <h3 className="mb-0">snapchat</h3>
-                <h4>iOS engineer (full time)</h4>
+                <h4>iOS engineer</h4>
                 <p>
-                  - integrated an advanced night mode widget into the snapchat
-                  mobile app
+                  - implemented a face-tracking lens for ring light v2 on the
+                  snapchat mobile app
                 </p>
                 <p>
-                  - carried out an A/B testing experiment to improve image
-                  quality in low light capture by increasing exposure
+                  - successfully shipped a "most recent camera mode" slot on the
+                  camera toolbar to increase overall camera modes usage.
                 </p>
               </div>
             </div>
 
             <div className="experience-row left-exp">
               <div className="single-experience-container ">
-                <h3 className="purple-shadow mb-0">2022</h3>
+                <h3 className="light- mb-0">2021</h3>
                 <h3 className="mb-0">snapchat</h3>
-                <h4>iOS engineer (full time)</h4>
+                <h4>iOS engineer intern</h4>
                 <p>
                   - integrated an advanced night mode widget into the snapchat
                   mobile app
+                </p>
+                <p>
+                  - created extensive UI tests to ensure smooth user experience
+                  for the night mode widget
                 </p>
                 <p>
                   - carried out an A/B testing experiment to improve image
@@ -86,32 +92,53 @@ function Experience() {
 
             <div className="experience-row right-exp">
               <div className="single-experience-container">
-                <h3 className="purple-shadow mb-0">2022</h3>
-                <h3 className="mb-0">snapchat</h3>
-                <h4>iOS engineer (full time)</h4>
+                <h3 className="light- mb-0">2021</h3>
+                <h3 className="mb-0">cal poly corporation</h3>
+                <h4>web developer intern</h4>
                 <p>
-                  - integrated an advanced night mode widget into the snapchat
-                  mobile app
+                  - Redesigned and coded a side menu for the international
+                  students website using HTML, CSS, and JavaScript to improve
+                  navigation
                 </p>
                 <p>
-                  - carried out an A/B testing experiment to improve image
-                  quality in low light capture by increasing exposure
+                  - Developed a PHP application for displaying graduate
+                  education events from a CSV file
+                </p>
+                <p>
+                  - Created high-fidelity wireframes for numerous Cal Poly
+                  websites to improve the user experience.
                 </p>
               </div>
             </div>
 
             <div className="experience-row left-exp">
               <div className="single-experience-container">
-                <h3 className="purple-shadow mb-0">2022</h3>
-                <h3 className="mb-0">snapchat</h3>
-                <h4>iOS engineer (full time)</h4>
+                <h3 className="light- mb-0">2020</h3>
+                <h3 className="mb-0">amazon</h3>
+                <h4>junior software developer</h4>
                 <p>
-                  - integrated an advanced night mode widget into the snapchat
-                  mobile app
+                  - Developed a user preference storage feature on an internal
+                  site using React, Redux, DynamoDB, and Spring Framework
                 </p>
                 <p>
-                  - carried out an A/B testing experiment to improve image
-                  quality in low light capture by increasing exposure
+                  - Developed a jurisdiction history page to enable the
+                  operations team to track the past delivery areas/routes
+                </p>
+              </div>
+            </div>
+
+            <div className="experience-row right-exp">
+              <div className="single-experience-container">
+                <h3 className="light- mb-0">2019</h3>
+                <h3 className="mb-0">Cal Poly Associated Students</h3>
+                <h4>it programmer student assistant</h4>
+                <p>
+                  - Developed web application to fully digitalize ASI student
+                  government elections using HTML, CakePHP, and SQL
+                </p>
+                <p>
+                  - Maintained and updated Cal Poly ASI website for 10,000+
+                  students
                 </p>
               </div>
             </div>

@@ -9,6 +9,7 @@ import About from './components/about'
 import Experience from './components/experience'
 import Projects from './components/projects'
 import Footer from './components/footer'
+import Involvements from './components/involvements'
 function App() {
   useEffect(() => {
     // change color of navbar after scrollign down
@@ -33,6 +34,7 @@ function App() {
               <About />
               <Experience />
               <Projects />
+              <Involvements />
               <Footer />
             </>
           }

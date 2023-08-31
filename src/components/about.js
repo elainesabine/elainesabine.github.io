@@ -24,12 +24,15 @@ function About() {
               <p>
                 i graduated from california polytechnic state university with a
                 degree in computer science. i am currently located in los
-                angeles working as an iOS engineer at snap inc.
+                angeles working as an ios engineer at snap inc.
               </p>
               <p>
                 i enjoy doing web development and like to build websites for
-                small businesses. in late 2021, i co-founded a web3 game along
-                with a whitelist marketplace site.
+                small businesses. in late 2021, i co-founded a web3 game called{' '}
+                <a href="http://www.peekaboonft.io" target={'blank'}>
+                  peek-a-boo
+                </a>{' '}
+                along with a whitelist marketplace site.
               </p>
             </div>
             <div className="about-image">
@@ -50,7 +53,7 @@ function About() {
               <div className="favs-line">
                 {' '}
                 <FontAwesomeIcon icon={faGamepad} />
-                <p>hyper light drifter</p>
+                <p>hollow knight</p>
               </div>
             </div>
             <div>
@@ -91,7 +94,7 @@ function About() {
             <div className="single-hobby">
               <img src={placeholder1} />
               <p>
-                making piano covers of video game music and anime/kdrama OSTs
+                making piano covers of video game music and anime/kdrama ost
               </p>
             </div>
 

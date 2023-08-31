@@ -59,3 +59,18 @@
   min-height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 750px) {
+  .project-row,
+  .project-row:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .project-desc-container {
+    width: 100%;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
+}

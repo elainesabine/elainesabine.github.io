@@ -29,11 +29,11 @@
 .timeline-line {
   width: 10px;
   /* min-height: 20%; */
-  background-color: var(--dark-purple);
+  background-color: var(--light-pink);
   position: absolute;
   border-radius: 30px;
   left: calc(50% - 5px);
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0 cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .top-circle,
@@ -43,6 +43,31 @@
   border-radius: 15px;
   position: absolute;
   left: calc(50% - 15px);
-  background-color: var(--dark-purple);
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: var(--light-pink);
+  transition: 0 cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media (max-width: 750px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .top-circle,
+  .bottom-circle {
+    left: 10px;
+  }
+
+  .right-exp,
+  .left-exp {
+    justify-content: left;
+  }
+
+  .experience-row {
+    width: 100%;
+  }
+
+  .single-experience-container {
+    width: 100%;
+    padding-left: 70px;
+  }
 }

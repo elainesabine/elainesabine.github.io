@@ -11,7 +11,8 @@ import placeholder1 from '../assets/placeholder1.png'
 import placeholder2 from '../assets/placeholder2.png'
 import { Button } from 'react-bootstrap'
 import $ from 'jquery'
-import projectPic from '../assets/projects/project.png'
+import senioritis from '../assets/projects/senioritis.png'
+import peekaboo from '../assets/projects/peekaboo.png'
 
 function Projects() {
   useEffect(() => {}, [])
@@ -21,12 +22,42 @@ function Projects() {
       <div className="projects-page-container">
         <div className="width-80-small dark-brown page-padding">
           <h1 className="mb-100 ">
-            my <span className="dark-pink">projects.</span>
+            recent <span className="dark-pink">projects.</span>
           </h1>
           <div className="project-rows">
             <div className="project-row">
               <div className="project-desc-container">
-                <h3>flash</h3>
+                <h3>peek-a-boo</h3>
+                <p>
+                  - integrated an advanced night mode widget into the snapchat
+                  mobile app
+                </p>
+                <p>
+                  - carried out an A/B testing experiment to improve image
+                  quality in low light capture by increasing exposure
+                </p>
+                <div className="skills-languages">
+                  <Button className="button-small rose-bg grey">
+                    <p className="mb-0">react</p>
+                  </Button>
+                  <Button className="button-small light-green-bg grey">
+                    <p className="mb-0">solidity</p>
+                  </Button>
+                </div>
+              </div>
+
+              <div className="project-image-container">
+                <div className="project-image-accent"></div>
+                <div className="project-image">
+                  {' '}
+                  <img src={peekaboo} style={{ width: '100%' }} />
+                </div>
+              </div>
+            </div>
+
+            <div className="project-row">
+              <div className="project-desc-container">
+                <h3>senioritis</h3>
                 <p>
                   - integrated an advanced night mode widget into the snapchat
                   mobile app
@@ -52,37 +83,8 @@ function Projects() {
                 <div className="project-image-accent"></div>
                 <div className="project-image">
                   {' '}
-                  <img src={projectPic} style={{ width: '100%' }} />
+                  <img src={senioritis} style={{ width: '100%' }} />
                 </div>
-              </div>
-            </div>
-
-            <div className="project-row">
-              <div className="project-desc-container">
-                <h3>flash</h3>
-                <p>
-                  - integrated an advanced night mode widget into the snapchat
-                  mobile app
-                </p>
-                <p>
-                  - carried out an A/B testing experiment to improve image
-                  quality in low light capture by increasing exposure
-                </p>
-                <div className="skills-languages">
-                  <Button className="button-small rose-bg grey">
-                    <p className="mb-0">react</p>
-                  </Button>
-                  <Button className="button-small light-green-bg grey">
-                    <p className="mb-0">solidity</p>
-                  </Button>
-                  <Button className="button-small beige-bg grey">
-                    <p className="mb-0">html</p>
-                  </Button>
-                </div>
-              </div>
-
-              <div className="project-image-container">
-                <div className="project-image-accent"></div>
               </div>
             </div>
           </div>
