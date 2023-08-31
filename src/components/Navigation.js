@@ -4,7 +4,7 @@ import email from '../assets/email.png'
 import github from '../assets/github.png'
 import instagram from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
-import './navigation.css'
+import './Navigation.css'
 
 function Navigation() {
   return (
