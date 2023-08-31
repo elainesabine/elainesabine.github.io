@@ -57,7 +57,7 @@ function Experience() {
             <div className="experience-row right-exp">
               <div className="single-experience-container ">
                 <h3 className="light- mb-0">2022</h3>
-                <h3 className="mb-0">snapchat</h3>
+                <h3 className="mb-0 light-pink">snapchat</h3>
                 <h4>iOS engineer</h4>
                 <p>
                   - implemented a face-tracking lens for ring light v2 on the
@@ -73,7 +73,7 @@ function Experience() {
             <div className="experience-row left-exp">
               <div className="single-experience-container ">
                 <h3 className="light- mb-0">2021</h3>
-                <h3 className="mb-0">snapchat</h3>
+                <h3 className="mb-0 light-pink">snapchat</h3>
                 <h4>iOS engineer intern</h4>
                 <p>
                   - integrated an advanced night mode widget into the snapchat
@@ -93,19 +93,19 @@ function Experience() {
             <div className="experience-row right-exp">
               <div className="single-experience-container">
                 <h3 className="light- mb-0">2021</h3>
-                <h3 className="mb-0">cal poly corporation</h3>
+                <h3 className="mb-0 light-pink">cal poly corporation</h3>
                 <h4>web developer intern</h4>
                 <p>
-                  - Redesigned and coded a side menu for the international
+                  - redesigned and coded a side menu for the international
                   students website using HTML, CSS, and JavaScript to improve
                   navigation
                 </p>
                 <p>
-                  - Developed a PHP application for displaying graduate
+                  - developed a PHP application for displaying graduate
                   education events from a CSV file
                 </p>
                 <p>
-                  - Created high-fidelity wireframes for numerous Cal Poly
+                  - created high-fidelity wireframes for numerous Cal Poly
                   websites to improve the user experience.
                 </p>
               </div>
@@ -114,14 +114,14 @@ function Experience() {
             <div className="experience-row left-exp">
               <div className="single-experience-container">
                 <h3 className="light- mb-0">2020</h3>
-                <h3 className="mb-0">amazon</h3>
+                <h3 className="mb-0 light-pink">amazon</h3>
                 <h4>junior software developer</h4>
                 <p>
-                  - Developed a user preference storage feature on an internal
+                  - developed a user preference storage feature on an internal
                   site using React, Redux, DynamoDB, and Spring Framework
                 </p>
                 <p>
-                  - Developed a jurisdiction history page to enable the
+                  - developed a jurisdiction history page to enable the
                   operations team to track the past delivery areas/routes
                 </p>
               </div>
@@ -130,14 +130,14 @@ function Experience() {
             <div className="experience-row right-exp">
               <div className="single-experience-container">
                 <h3 className="light- mb-0">2019</h3>
-                <h3 className="mb-0">Cal Poly Associated Students</h3>
+                <h3 className="mb-0 light-pink">cal poly associated students</h3>
                 <h4>it programmer student assistant</h4>
                 <p>
-                  - Developed web application to fully digitalize ASI student
+                  - developed web application to fully digitalize ASI student
                   government elections using HTML, CakePHP, and SQL
                 </p>
                 <p>
-                  - Maintained and updated Cal Poly ASI website for 10,000+
+                  - maintained and updated Cal Poly ASI website for 10,000+
                   students
                 </p>
               </div>

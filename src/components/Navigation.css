@@ -49,5 +49,5 @@
 }
 
 .header-solid {
-  background-color: rgb(239, 169, 186) !important;
+  background-color: var(--light-pink) !important;
 }

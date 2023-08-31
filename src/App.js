@@ -13,13 +13,13 @@ import Involvements from './components/involvements'
 function App() {
   useEffect(() => {
     // change color of navbar after scrollign down
-    // $(window).scroll(function () {
-    //   var containerHeight = $('.landing-page-container').height()
-    //   var windowHeight = $(window).scrollTop()
-    //   if (windowHeight > containerHeight - 153)
-    //     $('#nav').addClass('header-solid')
-    //   else $('#nav').removeClass('header-solid')
-    // })
+    $(window).scroll(function () {
+      var containerHeight = $('.landing-page-container').height()
+      var windowHeight = $(window).scrollTop()
+      if (windowHeight > containerHeight - 153)
+        $('#nav').addClass('header-solid')
+      else $('#nav').removeClass('header-solid')
+    })
   }, [])
 
   return (

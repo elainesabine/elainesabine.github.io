@@ -24,7 +24,6 @@
   width: 100vw;
   background-color: var(--light-pink);
   padding: 100px 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

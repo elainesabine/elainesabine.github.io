@@ -194,6 +194,12 @@
   src: url('./assets/fonts/futura_extra_black_font-webfont.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Futura-heavy';
+  src: url('./assets/fonts/futura_heavy_font-webfont.woff2') format('woff2');
+}
+
+
 p {
   font-family: 'Gotham Rounded';
 }
@@ -227,7 +233,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Futura';
+  font-family: 'Futura-heavy';
   font-size: 1.5em !important;
   font-weight: bold !important;
   margin-bottom: 0.5em !important;
@@ -257,4 +263,9 @@ p span.bold {
   h4 {
     font-size: calc(1rem + 0.6vw) !important;
   }
+}
+
+
+body {
+  overflow-x: hidden;
 }

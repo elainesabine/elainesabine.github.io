@@ -29,12 +29,10 @@ function Projects() {
               <div className="project-desc-container">
                 <h3>peek-a-boo</h3>
                 <p>
-                  - integrated an advanced night mode widget into the snapchat
-                  mobile app
+                  - a fully on-chain web3 game on the Arbitrum network, where players can earn $BOO tokens by playing a skill-based battleship-style P2E game.
                 </p>
                 <p>
-                  - carried out an A/B testing experiment to improve image
-                  quality in low light capture by increasing exposure
+                  - partnered with TreasureDAO, the biggest L2 decentralized gaming ecosystem, and resulted in over $1M in market volume.
                 </p>
                 <div className="skills-languages">
                   <Button className="button-small rose-bg grey">
@@ -59,12 +57,11 @@ function Projects() {
               <div className="project-desc-container">
                 <h3>senioritis</h3>
                 <p>
-                  - integrated an advanced night mode widget into the snapchat
-                  mobile app
+                  - an AI powered web tool to help aspiring young students get a head start on their college 
+                  writing process, and qualified job seeking candidates to get ahead of the resume curve.
                 </p>
                 <p>
-                  - carried out an A/B testing experiment to improve image
-                  quality in low light capture by increasing exposure
+                  - had over 10,000+ users.
                 </p>
                 <div className="skills-languages">
                   <Button className="button-small rose-bg grey">
