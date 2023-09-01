@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbe710c7.css",
+    "main.js": "/static/js/main.ef9dad96.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/desktop.png": "/static/media/desktop.a8d1417e9e32b5199e4a.png",
+    "static/media/peekaboo.png": "/static/media/peekaboo.c84242591ef08b324485.png",
+    "static/media/senioritis.png": "/static/media/senioritis.6275e22de76e8a476067.png",
+    "static/media/placeholder1.png": "/static/media/placeholder1.1ad75a4e319e6f085423.png",
+    "static/media/instagram.png": "/static/media/instagram.d2f65fdbef7c1ff19309.png",
+    "static/media/placeholder2.png": "/static/media/placeholder2.0864ba48a65c4ed044a4.png",
+    "static/media/Gotham-Rounded-Book.woff": "/static/media/Gotham-Rounded-Book.11edd376fe79abf342cd.woff",
+    "static/media/Gotham-Rounded-Bold.woff": "/static/media/Gotham-Rounded-Bold.a1294eeb298c937b8f54.woff",
+    "static/media/nunito-bold-webfont.woff2": "/static/media/nunito-bold-webfont.e24ad96d946828d73a44.woff2",
+    "static/media/nunito-regular-webfont.woff2": "/static/media/nunito-regular-webfont.942a2883c07a898dae24.woff2",
+    "static/media/github.png": "/static/media/github.60d23c66083a60239692.png",
+    "static/media/futura_heavy_font-webfont.woff2": "/static/media/futura_heavy_font-webfont.e9b90a45c7960a5acd3f.woff2",
+    "static/media/futura_extra_black_font-webfont.woff2": "/static/media/futura_extra_black_font-webfont.dd376d6d531aca3435a6.woff2",
+    "static/media/HelveticaNeue.woff2": "/static/media/HelveticaNeue.c03e7fa0ef8bd94f8e34.woff2",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.cbe710c7.css.map": "/static/css/main.cbe710c7.css.map",
+    "main.ef9dad96.js.map": "/static/js/main.ef9dad96.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbe710c7.css",
+    "static/js/main.ef9dad96.js"
+  ]
+}
