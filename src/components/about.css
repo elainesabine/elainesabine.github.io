@@ -50,7 +50,13 @@
 }
 
 .single-hobby {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+}
+
+.hobby-image {
+  size: 100%;
 }
 
 @media (max-width: 750px) {

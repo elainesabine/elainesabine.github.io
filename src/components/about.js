@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import placeholder1 from '../assets/placeholder1.png'
 import placeholder2 from '../assets/placeholder2.png'
+import mechSwitch from '../assets/switch.png'
 import { Button } from 'react-bootstrap'
 
 function About() {
@@ -99,7 +100,7 @@ function About() {
             </div>
 
             <div className="single-hobby">
-              <img src={placeholder2} />
+              <img src={mechSwitch} class="hobby-image"/>
               <p>building and customizing mechanical keyboards</p>
             </div>
 
